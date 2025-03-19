@@ -95,12 +95,13 @@ function App() {
                      }}>
                      <h2 id="icons"
                      style={{
-                        fontSize:"25px",
+                        fontSize:"20px",
                         fontWeight:"bold",
-                        color:" rgba(3, 103, 255, 0.801)",
-                     }}>&lt;/&gt;</h2>
+                       color:"black",
+                     
+                     }}>&lt; &gt;</h2>
                      <h2 style={{
-                        fontSize:"40px",
+                        fontSize:"30px",
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
                         color:" rgba(3, 103, 255, 0.801)",
@@ -127,7 +128,7 @@ function App() {
                      }}
                      >✓</h2>
                      <h2 style={{
-                        fontSize:"40px",
+                        fontSize:"30px",
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
                         color:" rgba(3, 103, 255, 0.801)",
@@ -148,7 +149,7 @@ function App() {
                      }}>
                      <h2 id="icons" >&lt;/&gt;</h2>
                      <h2 style={{
-                        fontSize:"40px",
+                        fontSize:"30px",
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
                         color:" rgba(3, 103, 255, 0.801)",
@@ -169,7 +170,7 @@ function App() {
                      }}>
                      <h2 id="icons">&lt;&gt;</h2>
                      <h2 style={{
-                        fontSize:"40px",
+                        fontSize:"30px",
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
                         color:" rgba(3, 103, 255, 0.801)",
