@@ -184,15 +184,14 @@ function App() {
           </div>
           </div>
   
-  <h1 style={{
+  <h1 id="abouttitle" style={{
      textAlign:"center",
-     fontSize:"40px",
+     fontSize:"35px",
      fontWeight:"bold",
-     marginTop:"150px",
      marginBottom:"0px",
-         fontFamily:"'Lora',serif",
+        
   }}>
-         About
+         About Me
        </h1>
       <div id="aboutme">
        

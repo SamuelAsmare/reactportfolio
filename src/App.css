@@ -189,6 +189,9 @@ body{
     font-family: 'Lora',serif;
     color:#0b204e;
   }
+  #abouttitle{
+    margin-top: 150px;
+  }
 #photo{
    border-radius: 10px;
   box-shadow: 0px 5px 20px 10px rgba(139, 137, 137, 0.1);
@@ -433,6 +436,10 @@ transform:translateY(-20px);
   height: 150px;
   border-radius: 10px;
 }
+ #abouttitle{
+    margin-top: 50px;
+    
+  }
 #eachservice{
      width:400px;
      height: 350px;
