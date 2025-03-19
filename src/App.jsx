@@ -8,7 +8,7 @@ import '@fontsource/roboto'; // Default weight is 400.
 function App() {
   return (
      <div id="app">
-      <nav id="hea">
+      <div id="hea">
        <div id="navs"  title="home">
         Home
        </div>
@@ -27,7 +27,7 @@ function App() {
        <div id="navs">
       Contact
        </div>
-      </nav>
+      </div>
 
       <div id="homepage">
        
@@ -57,15 +57,17 @@ function App() {
          <div style={{
             padding:"0px",
             width:"100%",
+            fontFamily:"font-family: 'Nunito', sans-serif;",
 
          }}>
-            <h3 className="text-center fs-12 pt-0 p-lg-5 p-lg- p-md-2" id="name">
+            <h3 className="text-center fs-12 pt-0 p-lg-5 p-lg- p-md-2" id="nam">
           I'm a skilled Frontend developer focused on creating tailored web solutions. I deliver seamless applications that meet your needs, making me your trusted partner for web development and different problem soloving projects.
          </h3>
          </div>
          <div style={{
             padding:"0px",
             width:"100%",
+            fontFamily:"font-family: 'Nunito', sans-serif;",
 
          }}>
          </div>
@@ -855,7 +857,7 @@ Active participant in competitive programming platforms with expertise in data s
 
             </div>
           </div>
-      </div>
+      </div></div>
    {/* projects */}
    <div id="projectspage">
     <h1 style={{
@@ -1325,8 +1327,210 @@ Real-time weather forecasting app with detailed climate information.            
                      </button>
        </div>
    </div>
+
+   {/* Get in touch */}
+  
+   <div id="getintouchpage">
+
+      <h1 style={{
+         fontSize:"40px",
+         fontWeight:"bold",
+         color:"black",
+         textAlign:"center",
+         marginTop:"50px",
+      }}>
+         Get in Touch
+      </h1>
+      <h4>Let's discuss your next project</h4>
+      <div id="formandcontact">
+      <div style={{
+         width:"400px",
+         display:"flex",
+         justifyConyent:"end"
+      }}>
+         <form id="form" style={{
+            width:"380px",
+            margin:"auto",
+            padding:"20px",
+            gap:"20px",
+         
+         }}>
+           <input type="text" placeholder="Name" id="name" required/>
+            <input type="email" placeholder="Email" id="name" required/>
+            <input type="text" placeholder="Subject" id="name" required/>
+            <textarea placeholder="Message" id="name" required></textarea>
+            <input type="submit" id="sendmessage" value="Send Message"/>
+         </form>
+      </div>
+      <div id="contact" style={{
+            display: 'flex',
+            margin:"auto",
+            justifyContent:'center',
+            flexDirection:'column',
+            width:"600px",
+            gap:"20px",
+            fontFamily:"font-family: 'Nunito', sans-serif"
+      }}>
+        
+         <div style={{
+            display: 'flex',
+            justifyContent:'flex-end',
+            gap:"20px",
+            marginBottom: '20px',
+         }}>
+            
+         <h5 style={{
+            width: '30px',
+            height: '30px',
+            borderRadius: '50%',
+            backgroundColor: 'rgb(110, 192, 237)',
+            display: 'inline-block',
+            color:"black",
+            paddingTop: "5px",
+            textAlign:"center",
+            fontFamily:" 'Nunito', sans-serif",
+            fontWeight: 'bold',
+         }}>📱</h5>
+        
+         <h4 style={{
+            paddingTop: '8px',
+            marginLeft: '67x',
+             fontSize: '18px',
+             text:"center",
+            fontWeight: 'bold',
+            fontFamily:"'Nunito', sans-serif",
+         }}>phone: +(251) 928210736&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h4>
+         </div>
+         <div style={{
+            display: 'flex',
+           justifyContent:'flex-end',
+            gap:"20px",
+            marginBottom: '20px',
+         }}>
+         <h5 style={{
+            width: '30px',
+            height: '30px',
+            borderRadius: '50%',
+            backgroundColor: '#f0d2f6',
+             color:"rgb(110, 192, 237)",
+            paddingTop: "5px",
+           textAlign:"center",
+            fontFamily:" 'Nunito', sans-serif",
+            fontWeight: 'bold',
+         }}>✉</h5>
+        
+         <h4 style={{
+            paddingTop: '8px',
+            marginLeft: '10px',
+             fontSize: '18px',
+            fontWeight: 'bold',
+            fontFamily:"'Nunito', sans-serif",
+         }}>Email: samuelasmare19@gmail.com</h4>
+         </div>
+         <div style={{
+            display: 'flex',
+            justifyContent:'flex-end',
+            gap:"20px",
+            marginBottom: '20px',
+         }}>
+         <h6 style={{
+            width: '30px',
+            height: '30px',
+            borderRadius: '50%',
+            backgroundColor: 'rgb(110, 192, 237)',
+            paddingTop: "5px",
+             textAlign:"center",
+            fontFamily:" 'Nunito', sans-serif",
+            fontWeight: 'bold',
+         }}>🌍</h6>
+        
+         <h5 style={{
+            paddingTop: '8px',
+            marginLeft: '0px',
+            fontSize: '18px',
+            fontWeight: 'bold',
+            fontFamily:"'Nunito', sans-serif",
+         }}>Location: Addis Ababa, Ethiopia&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h5>
+         </div>
+         <div style={{
+            display: 'flex',
+            justifyContent:'center',
+            gap:"20px",
+            marginBottom: '20px',
+         }}>
+         
+         </div>
+      </div>
+      </div>
+   </div> 
+   {/*  Contact*/}
+   <div id="lastdiv">
+      <div id="logo" style={{
+         width:"400px",
+      }}>
+        <h3  style={{textAlign:"center"}}>
+         Logo
+        </h3>
+        <h6>
+         Creating innovative digital solutions with a focus on user experience and performance.
+        </h6>
+      </div>
+      <div id="quicklinks">
+      <h3  style={{textAlign:"center"}}>Quick Links</h3>
+      <h6  style={{textAlign:"center"}}>
+         Services
+      </h6>
+      <h6  style={{textAlign:"center"}}>
+         About
+      </h6>
+      <h6  style={{textAlign:"center"}}>
+         Services
+      </h6>
+      <h6 style={{textAlign:"center"}}>
+         Skills
+      </h6>
+      <h6  style={{textAlign:"center"}}>
+        Projects
+      </h6>
+      </div>
+      <div id="newsletter">
+          <h3 style={{textAlign:"center"}}>
+            Newsletter
+          </h3>
+          <h6  style={{textAlign:"center"}}>
+            Subscribe to receive updates and news.
+          </h6>
+          <input type="email" placeholder="Email..." style={{
+            backgroundColor:"",
+            color:"black",
+            padding:"",
+            border:"none",
+            cursor:"pointer",
+            fontFamily:"'Nunito', sans-serif",
+            fontWeight:"bold",
+            fontSize:"16px",
+ 
+          }}></input>
+          <button style={{
+            backgroundColor:"#99f1b9",
+            color:"black",
+            padding:"",
+            border:"none",
+            cursor:"pointer",
+            fontFamily:"'Nunito', sans-serif",
+            fontWeight:"bold",
+            fontSize:"16px",
+ 
+          }}>Subscribe</button>
+      </div>
+   </div>
+   <div id="footer">
+      <h6  style={{textAlign:"center"}}>
+         Copyright &copy; Samuel Asmare. All rights reserved.
+      </h6>
+   </div>
      </div>
-     </div>
+    
   )
 } 
                   

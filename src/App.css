@@ -10,28 +10,31 @@ body{
   font-family: 'Roboto', sans-serif;
   width: 100%;
   overflow-x: hidden;
+   min-height: 200vh; /* Forces scrolling */
+ 
 
  
 }
 #app{
   width: 100%;
-  overflow: hidden;
   display: flex;
   padding: 0px;
   flex-direction: column;
   align-items: center;
 }
-#hea{
-    display: flex;
-    justify-content: end;
-    padding-right: 50px;
-    padding-top: 30px;
-    gap: 20px;
-     position: sticky;
-  top: 0px;
-   z-index: 1;
-    width: 100%;
+#hea {
+ position: sticky;
+    top:0px;
+    z-index:100;
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+  padding-top: 30px;
+  gap: 20px;
+  width: 100%;
 }
+
 #navs{
   font-size:16px;
   color:black;
@@ -88,7 +91,7 @@ body{
   scale:1.05;
 }
 #connect{
-  color:#ce13d1;
+  color:rgb(110, 192, 237);
  width:200px;
   width:200px;
  height: 60px;
@@ -168,6 +171,9 @@ body{
   border:rgb(13, 223, 181) 2.5px solid;
   border-radius: 10px;
   transition:0.1s linear;
+ animation: right 2s linear;
+       animation-timeline:view();
+         animation-range:entry 0%;
 }
 #experianceblocks:hover{
   box-shadow:none;
@@ -202,6 +208,9 @@ body{
   margin-right: 10px;
   border-radius:10px;
   transition:0.1s ease-in-out;
+  animation: left  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
   
 }
 #photo:hover{
@@ -231,6 +240,9 @@ body{
   font-family: 'Lora',serif;
   color:#0b204e;
 }
+@scroll-timeline --my-timeline {
+  source: view();
+}
 #eachservice{
      width:550px;
      height: 300px;
@@ -247,6 +259,9 @@ body{
      transition: 0.1s ease-in-out;
      color:#555;
       border:white solid 2px;
+     animation: left  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
 }
 #eachservice:hover {
      box-shadow: none;
@@ -358,6 +373,65 @@ transform:translateY(-20px);
   gap: 0px;
   flex-wrap: wrap;
 }
+#getintouchpage{
+  margin:auto;
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+#formandcontact{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  margin:auto;
+  padding: 20px;
+}
+#name{
+  width:600px;
+  border-radius:5px;
+ border:rgb(80, 208, 234) solid 2px;
+}
+#name:active{
+  border-radius:5px;
+  border:rgb(10, 189, 229) solid 2px;
+}
+#sendmessage{
+  background-color:rgb(125, 239, 125);
+  border-radius:5px;
+  border:none;
+
+}
+#lastdiv{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  background-color:rgb(6, 14, 35);
+  color:rgb(178, 175, 175);
+  width:100%;
+  padding:20px;
+   font-family:"'Nunito', sans-serif",
+}
+#footer{
+  background-color:rgb(6, 14, 35);
+  padding:20px;
+  color:rgb(237, 230, 230);
+  WIDTH: 100%;
+  text-align:center;
+}
 
 @media (max-width: 600px){
     #hea{
@@ -468,7 +542,6 @@ transform:translateY(-20px);
 }
 #eachproject{
   border-radius:10px;
-  border:#02e7c1 solid 2px;
   width:380px;
   height: 380px;
  margin-top:40px;
@@ -476,4 +549,45 @@ transform:translateY(-20px);
   flex-direction: column;
   gap: 20px;
 }
+#getintouchpage{
+  margin:auto;
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+#name{
+  width:340px;
+  border-radius:5px;
+  border:rgb(108, 168, 242) solid 2px;
+}
+}
+
+
+@keyframes left{
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes right{
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes bottom{
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
