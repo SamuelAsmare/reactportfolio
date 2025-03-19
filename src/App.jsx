@@ -196,7 +196,7 @@ function App() {
       <div id="aboutme">
        
         <div id="photo">
-           <img src="./sama 2copy.png" style={{
+           <img src="./NEWCOPY.JPG" style={{
             width:"100%",
             height:"100%",
             borderRadius:"10px",
@@ -778,7 +778,7 @@ Active participant in competitive programming platforms with expertise in data s
                         color:"white",
                          borderRadius:"10px",
                         backgroundColor:"#106bec",
-                     }}>CSS</h2>
+                     }}>Py</h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -790,7 +790,7 @@ Active participant in competitive programming platforms with expertise in data s
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
                
-                     }}>CSS</h3>
+                     }}>Python</h3>
                      <h7 style={{
                         fontSize:"15px",
                         fontWeight:"bold",
