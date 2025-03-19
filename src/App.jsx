@@ -477,7 +477,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
-                  gap:"180px",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
@@ -519,7 +519,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
-                  gap:"180px",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
@@ -560,7 +560,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
-                  gap:"180px",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
@@ -601,7 +601,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
-                  gap:"180px",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
@@ -642,7 +642,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
-                  gap:"180px",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
@@ -683,7 +683,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
-                  gap:"180px",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
@@ -731,14 +731,14 @@ Active participant in competitive programming platforms with expertise in data s
                }}>
                      <h2 id="icons"
                      style={{
-                        paddingTop:"5px",
+                        paddingTop:"0px",
                         marginLeft:"30px",
                         fontSize:"35px",
-                        fontFamily: "'Arial', sans-serif",
                         borderRadius:"10px",
                         fontWeight:"bold",
                          backgroundColor:"  rgb(204, 255, 204)",
-                     }}>◎</h2>
+                         fontFamily:"'Lora',serif",
+                     }}>g</h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -766,7 +766,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
-                  gap:"180px",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
@@ -807,7 +807,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
-                  gap:"180px",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
@@ -845,10 +845,221 @@ Active participant in competitive programming platforms with expertise in data s
 
             </div>
           </div>
-          <div id="professionalskills">
-         
-          </div>
       </div>
+   {/* projects */}
+   <div id="projectspage">
+    <h1 style={{
+      marginTop:"150px",
+      textAlign:"center",
+      fontWeight:"bold",
+      // fontFamily:"'Nunito', sans-serif"
+
+    }}
+    > Featured Projects</h1> 
+<h5
+style={{
+      marginTop:"15px",
+      textAlign:"center",
+     
+      fontFamily:"'Nunito', sans-serif"
+
+    }}
+>A selection of my recent works</h5>
+   </div>
+   <div id="projects">
+      {/* Movie app */}
+       <div id="eachproject">
+         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+         style={{
+            width:"100%",
+            height:"60%",
+            borderRadius:"10px 10px 0px 0px",
+         }}></img>
+         <h2 
+         style={{
+                        fontSize:"20px",
+                         marginLeft:"30px",
+                         marginTop:"-10px",
+                        fontWeight:"bold",
+                        fontFamily:"sans-serif",
+                        color:"black",
+               
+                     }}>Movie App</h2>
+                     <h5 
+                      style={{
+                        fontSize:"16px",
+                         marginLeft:"30px",
+                        color:"black",
+                         fontFamily:"'Nunito', sans-serif"
+               
+                     }}>
+                        Movie browsing application with detailed information and reviews.
+                     </h5>
+                     <button id="viewtheproject">
+                        View project
+                     </button>
+       </div>
+       {/* Qrcode scanner */}
+   <div id="eachproject">
+         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+         style={{
+            width:"100%",
+            height:"60%",
+            borderRadius:"10px 10px 0px 0px",
+         }}></img>
+         <h2 
+         style={{
+                        fontSize:"20px",
+                         marginLeft:"30px",
+                         marginTop:"-10px",
+                        fontWeight:"bold",
+                        fontFamily:"sans-serif",
+                        color:"black",
+               
+                     }}>Movie App</h2>
+                     <h5 
+                      style={{
+                        fontSize:"16px",
+                         marginLeft:"30px",
+                        color:"black",
+                         fontFamily:"'Nunito', sans-serif"
+               
+                     }}>
+                        Movie browsing application with detailed information and reviews.
+                     </h5>
+                     <button id="viewtheproject">
+                        View project
+                     </button>
+       </div>
+       {/* Quiz App */}
+      <div id="eachproject">
+         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+         style={{
+            width:"100%",
+            height:"60%",
+            borderRadius:"10px 10px 0px 0px",
+         }}></img>
+         <h2 
+         style={{
+                        fontSize:"20px",
+                         marginLeft:"30px",
+                         marginTop:"-10px",
+                        fontWeight:"bold",
+                        fontFamily:"sans-serif",
+                        color:"black",
+               
+                     }}>Movie App</h2>
+                     <h5 
+                      style={{
+                        fontSize:"16px",
+                         marginLeft:"30px",
+                        color:"black",
+                         fontFamily:"'Nunito', sans-serif"
+               
+                     }}>
+                        Movie browsing application with detailed information and reviews.
+                     </h5>
+                     <button id="viewtheproject">
+                        View project
+                     </button>
+       </div>
+       {/* Password Generator */}
+        <div id="eachproject">
+         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+         style={{
+            width:"100%",
+            height:"60%",
+            borderRadius:"10px 10px 0px 0px",
+         }}></img>
+         <h2 
+         style={{
+                        fontSize:"20px",
+                         marginLeft:"30px",
+                         marginTop:"-10px",
+                        fontWeight:"bold",
+                        fontFamily:"sans-serif",
+                        color:"black",
+               
+                     }}>Movie App</h2>
+                     <h5 
+                      style={{
+                        fontSize:"16px",
+                         marginLeft:"30px",
+                        color:"black",
+                         fontFamily:"'Nunito', sans-serif"
+               
+                     }}>
+                        Movie browsing application with detailed information and reviews.
+                     </h5>
+                     <button id="viewtheproject">
+                        View project
+                     </button>
+       </div>
+       {/* Weather App */}
+       <div id="eachproject">
+         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+         style={{
+            width:"100%",
+            height:"60%",
+            borderRadius:"10px 10px 0px 0px",
+         }}></img>
+         <h2 
+         style={{
+                        fontSize:"20px",
+                         marginLeft:"30px",
+                         marginTop:"-10px",
+                        fontWeight:"bold",
+                        fontFamily:"sans-serif",
+                        color:"black",
+               
+                     }}>Movie App</h2>
+                     <h5 
+                      style={{
+                        fontSize:"16px",
+                         marginLeft:"30px",
+                        color:"black",
+                         fontFamily:"'Nunito', sans-serif"
+               
+                     }}>
+                        Movie browsing application with detailed information and reviews.
+                     </h5>
+                     <button id="viewtheproject">
+                        View project
+                     </button>
+       </div>
+       {/* Calculator */}
+       <div id="eachproject">
+         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+         style={{
+            width:"100%",
+            height:"60%",
+            borderRadius:"10px 10px 0px 0px",
+         }}></img>
+         <h2 
+         style={{
+                        fontSize:"20px",
+                         marginLeft:"30px",
+                         marginTop:"-10px",
+                        fontWeight:"bold",
+                        fontFamily:"sans-serif",
+                        color:"black",
+               
+                     }}>Movie App</h2>
+                     <h5 
+                      style={{
+                        fontSize:"16px",
+                         marginLeft:"30px",
+                        color:"black",
+                         fontFamily:"'Nunito', sans-serif"
+               
+                     }}>
+                        Movie browsing application with detailed information and reviews.
+                     </h5>
+                     <button id="viewtheproject">
+                        View project
+                     </button>
+       </div>
+   </div>
      </div>
      </div>
   )
