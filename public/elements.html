@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)file:///C:/Users/hp/Desktop/new.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Anderson - Portfolio</title>
+    <script src="./elements_files/saved_resource"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./elements_files/css2" rel="stylesheet">
+    <link href="./elements_files/remixicon.css" rel="stylesheet">
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .progress-bar { transition: width 0.5s ease-in-out; }
+      .project-card { transition: transform 0.3s ease; }
+      .project-card:hover { transform: translateY(-5px); }
+      .nav-link { transition: color 0.3s ease; }
+      .nav-link.active { color: #3B82F6; }
+      .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
+      @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes float1 {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(100px, 100px); }
+      50% { transform: translate(200px, 0); }
+      75% { transform: translate(100px, -100px); }
+      100% { transform: translate(0, 0); }
+      }
+      @keyframes float2 {
+      0% { transform: translate(200px, 200px); }
+      25% { transform: translate(0, 100px); }
+      50% { transform: translate(-200px, 200px); }
+      75% { transform: translate(0, 300px); }
+      100% { transform: translate(200px, 200px); }
+      }
+      @keyframes float3 {
+      0% { transform: translate(-100px, -100px); }
+      25% { transform: translate(100px, -200px); }
+      50% { transform: translate(300px, -100px); }
+      75% { transform: translate(100px, 0); }
+      100% { transform: translate(-100px, -100px); }
+      }
+      @keyframes float4 {
+      0% { transform: translate(300px, 300px); }
+      25% { transform: translate(200px, 100px); }
+      50% { transform: translate(100px, 300px); }
+      75% { transform: translate(0, 100px); }
+      100% { transform: translate(300px, 300px); }
+      }
+      @keyframes bounce1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+      @keyframes bounce2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+      @keyframes bounce3 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-25px); } }
+      @keyframes bounce4 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+      @keyframes bounce5 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
+      @keyframes bounce6 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
+      @keyframes bounce7 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-22px); } }
+      @keyframes bounce8 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+      @keyframes bounce9 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-28px); } }
+      @keyframes slide-in {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .animate-slide-in {
+        animation: slide-in 0.8s ease-out forwards;
+      }
+      .animate-fade-in { animation: fadeInUp 0.6s ease-out forwards; }
+      .animate-float1 { animation: float1 20s infinite linear; }
+      .animate-float2 { animation: float2 25s infinite linear; }
+      .animate-float3 { animation: float3 30s infinite linear; }
+      .animate-float4 { animation: float4 35s infinite linear; }
+      .animate-bounce1 { animation: bounce1 2s infinite ease-in-out; }
+      .animate-bounce2 { animation: bounce2 2.2s infinite ease-in-out; }
+      .animate-bounce3 { animation: bounce3 1.8s infinite ease-in-out; }
+      .animate-bounce4 { animation: bounce4 2.4s infinite ease-in-out; }
+      .animate-bounce5 { animation: bounce5 1.6s infinite ease-in-out; }
+      .animate-bounce6 { animation: bounce6 2.3s infinite ease-in-out; }
+      .animate-bounce7 { animation: bounce7 1.9s infinite ease-in-out; }
+      .animate-bounce8 { animation: bounce8 2.1s infinite ease-in-out; }
+      .animate-bounce9 { animation: bounce9 1.7s infinite ease-in-out; }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              secondary: "#10B981",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-top-32{top:-8rem}.bottom-0{bottom:0px}.left-0{left:0px}.left-1\/2{left:50%}.right-0{right:0px}.col-span-2{grid-column:span 2 / span 2}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-3{margin-right:0.75rem}.mr-4{margin-right:1rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-32{height:8rem}.h-4{height:1rem}.h-48{height:12rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-20{width:5rem}.w-32{width:8rem}.w-4{width:1rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-rotate-90{--tw-rotate:-90deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-9{grid-template-columns:repeat(9, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.gap-16{gap:4rem}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.\!rounded-button{border-radius:8px !important}.rounded{border-radius:8px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:16px}.rounded-xl{border-radius:20px}.rounded-l{border-top-left-radius:8px;border-bottom-left-radius:8px}.rounded-r{border-top-right-radius:8px;border-bottom-right-radius:8px}.border{border-width:1px}.border-2{border-width:2px}.border-t{border-top-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity, 1))}.border-primary{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-200{--tw-bg-opacity:1;background-color:rgb(191 219 254 / var(--tw-bg-opacity, 1))}.bg-blue-300{--tw-bg-opacity:1;background-color:rgb(147 197 253 / var(--tw-bg-opacity, 1))}.bg-blue-400{--tw-bg-opacity:1;background-color:rgb(96 165 250 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-indigo-100{--tw-bg-opacity:1;background-color:rgb(224 231 255 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-primary\/10{background-color:rgb(59 130 246 / 0.1)}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-yellow-100{--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-blue-50{--tw-gradient-from:#eff6ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(239 246 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-primary{--tw-gradient-from:#3B82F6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-white{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-100{--tw-gradient-to:#dbeafe var(--tw-gradient-to-position)}.to-blue-700{--tw-gradient-to:#1d4ed8 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-12{padding:3rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-12{padding-left:3rem;padding-right:3rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-\[\'Inter\'\]{font-family:'Inter'}.font-\[\'Pacifico\'\]{font-family:'Pacifico'}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-7xl{font-size:4.5rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-secondary{--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-yellow-600{--tw-text-opacity:1;color:rgb(202 138 4 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-blue-600:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.hover\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:text-blue-700:hover{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-transparent:focus{border-color:transparent}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-primary:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:w-1\/2{width:50%}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+  <body class="bg-white font-[&#39;Inter&#39;] text-gray-900">
+    <header class="min-h-screen relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-100"></div>
+      <div class="absolute inset-0">
+        <video autoplay="" loop="" muted="" playsinline="" class="absolute inset-0 w-full h-full object-cover">
+          <source src="https://public.readdy.ai/gen_page/hero_bg_video.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-white/50 backdrop-blur-sm"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
+        <div class="w-full text-center relative">
+          <div class="absolute -top-32 left-1/2 transform -translate-x-1/2 w-full">
+            <div class="grid grid-cols-9 gap-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              <div class="animate-bounce1 w-4 h-4 bg-blue-200 rounded-full"></div>
+              <div class="animate-bounce2 w-4 h-4 bg-blue-300 rounded-full"></div>
+              <div class="animate-bounce3 w-4 h-4 bg-blue-400 rounded-full"></div>
+              <div class="animate-bounce4 w-4 h-4 bg-blue-500 rounded-full"></div>
+              <div class="animate-bounce5 w-4 h-4 bg-blue-600 rounded-full"></div>
+              <div class="animate-bounce6 w-4 h-4 bg-blue-500 rounded-full"></div>
+              <div class="animate-bounce7 w-4 h-4 bg-blue-400 rounded-full"></div>
+              <div class="animate-bounce8 w-4 h-4 bg-blue-300 rounded-full"></div>
+              <div class="animate-bounce9 w-4 h-4 bg-blue-200 rounded-full"></div>
+            </div>
+          </div>
+          <h1 class="text-7xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-700" id="animatedTitle" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;"><span class="inline-block hover:animate-bounce1" style="animation-delay: 0s;">
+</span><span class="inline-block hover:animate-bounce2" style="animation-delay: 0.1s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 0.2s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 0.3s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 0.4s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 0.5s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 0.6s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 0.7s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 0.8s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 0.9s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 1s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 1.1s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 1.2s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 1.3s;">C</span><span class="inline-block hover:animate-bounce6" style="animation-delay: 1.4s;">
+</span><span class="inline-block hover:animate-bounce7" style="animation-delay: 1.5s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 1.6s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 1.7s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 1.8s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 1.9s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 2s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 2.1s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 2.2s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 2.3s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 2.4s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 2.5s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 2.6s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 2.7s;">r</span><span class="inline-block hover:animate-bounce2" style="animation-delay: 2.8s;">
+</span><span class="inline-block hover:animate-bounce3" style="animation-delay: 2.9s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 3s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 3.1s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 3.2s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 3.3s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 3.4s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 3.5s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 3.6s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 3.7s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 3.8s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 3.9s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 4s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 4.1s;">a</span><span class="inline-block hover:animate-bounce7" style="animation-delay: 4.2s;">
+</span><span class="inline-block hover:animate-bounce8" style="animation-delay: 4.3s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 4.4s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 4.5s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 4.6s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 4.7s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 4.8s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 4.9s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 5s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 5.1s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 5.2s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 5.3s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 5.4s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 5.5s;">f</span><span class="inline-block hover:animate-bounce3" style="animation-delay: 5.6s;">
+</span><span class="inline-block hover:animate-bounce4" style="animation-delay: 5.7s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 5.8s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 5.9s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 6s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 6.1s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 6.2s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 6.3s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 6.4s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 6.5s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 6.6s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 6.7s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 6.8s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 6.9s;">t</span><span class="inline-block hover:animate-bounce8" style="animation-delay: 7s;">
+</span><span class="inline-block hover:animate-bounce9" style="animation-delay: 7.1s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 7.2s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 7.3s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 7.4s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 7.5s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 7.6s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 7.7s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 7.8s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 7.9s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 8s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 8.1s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 8.2s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 8.3s;">i</span><span class="inline-block hover:animate-bounce4" style="animation-delay: 8.4s;">
+</span><span class="inline-block hover:animate-bounce5" style="animation-delay: 8.5s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 8.6s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 8.7s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 8.8s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 8.9s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 9s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 9.1s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 9.2s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 9.3s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 9.4s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 9.5s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 9.6s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 9.7s;">n</span><span class="inline-block hover:animate-bounce9" style="animation-delay: 9.8s;">
+</span><span class="inline-block hover:animate-bounce1" style="animation-delay: 9.9s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 10s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 10.1s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 10.2s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 10.3s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 10.4s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 10.5s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 10.6s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 10.7s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 10.8s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 10.9s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 11s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 11.1s;">g</span><span class="inline-block hover:animate-bounce5" style="animation-delay: 11.2s;">
+</span><span class="inline-block hover:animate-bounce6" style="animation-delay: 11.3s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 11.4s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 11.5s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 11.6s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 11.7s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 11.8s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 11.9s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 12s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 12.1s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 12.2s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 12.3s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 12.4s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 12.5s;">&nbsp;</span><span class="inline-block hover:animate-bounce1" style="animation-delay: 12.6s;">
+</span><span class="inline-block hover:animate-bounce2" style="animation-delay: 12.7s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 12.8s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 12.9s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 13s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 13.1s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 13.2s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 13.3s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 13.4s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 13.5s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 13.6s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 13.7s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 13.8s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 13.9s;">D</span><span class="inline-block hover:animate-bounce6" style="animation-delay: 14s;">
+</span><span class="inline-block hover:animate-bounce7" style="animation-delay: 14.1s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 14.2s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 14.3s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 14.4s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 14.5s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 14.6s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 14.7s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 14.8s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 14.9s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 15s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 15.1s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 15.2s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 15.3s;">i</span><span class="inline-block hover:animate-bounce2" style="animation-delay: 15.4s;">
+</span><span class="inline-block hover:animate-bounce3" style="animation-delay: 15.5s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 15.6s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 15.7s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 15.8s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 15.9s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 16s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 16.1s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 16.2s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 16.3s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 16.4s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 16.5s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 16.6s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 16.7s;">g</span><span class="inline-block hover:animate-bounce7" style="animation-delay: 16.8s;">
+</span><span class="inline-block hover:animate-bounce8" style="animation-delay: 16.9s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 17s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 17.1s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 17.2s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 17.3s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 17.4s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 17.5s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 17.6s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 17.7s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 17.8s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 17.9s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 18s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 18.1s;">i</span><span class="inline-block hover:animate-bounce3" style="animation-delay: 18.2s;">
+</span><span class="inline-block hover:animate-bounce4" style="animation-delay: 18.3s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 18.4s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 18.5s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 18.6s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 18.7s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 18.8s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 18.9s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 19s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 19.1s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 19.2s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 19.3s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 19.4s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 19.5s;">t</span><span class="inline-block hover:animate-bounce8" style="animation-delay: 19.6s;">
+</span><span class="inline-block hover:animate-bounce9" style="animation-delay: 19.7s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 19.8s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 19.9s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 20s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 20.1s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 20.2s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 20.3s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 20.4s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 20.5s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 20.6s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 20.7s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 20.8s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 20.9s;">a</span><span class="inline-block hover:animate-bounce4" style="animation-delay: 21s;">
+</span><span class="inline-block hover:animate-bounce5" style="animation-delay: 21.1s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 21.2s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 21.3s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 21.4s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 21.5s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 21.6s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 21.7s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 21.8s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 21.9s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 22s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 22.1s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 22.2s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 22.3s;">l</span><span class="inline-block hover:animate-bounce9" style="animation-delay: 22.4s;">
+</span><span class="inline-block hover:animate-bounce1" style="animation-delay: 22.5s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 22.6s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 22.7s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 22.8s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 22.9s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 23s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 23.1s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 23.2s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 23.3s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 23.4s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 23.5s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 23.6s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 23.7s;">&nbsp;</span><span class="inline-block hover:animate-bounce5" style="animation-delay: 23.8s;">
+</span><span class="inline-block hover:animate-bounce6" style="animation-delay: 23.9s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 24s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 24.1s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 24.2s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 24.3s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 24.4s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 24.5s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 24.6s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 24.7s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 24.8s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 24.9s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 25s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 25.1s;">E</span><span class="inline-block hover:animate-bounce1" style="animation-delay: 25.2s;">
+</span><span class="inline-block hover:animate-bounce2" style="animation-delay: 25.3s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 25.4s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 25.5s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 25.6s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 25.7s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 25.8s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 25.9s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 26s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 26.1s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 26.2s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 26.3s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 26.4s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 26.5s;">x</span><span class="inline-block hover:animate-bounce6" style="animation-delay: 26.6s;">
+</span><span class="inline-block hover:animate-bounce7" style="animation-delay: 26.7s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 26.8s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 26.9s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 27s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 27.1s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 27.2s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 27.3s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 27.4s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 27.5s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 27.6s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 27.7s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 27.8s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 27.9s;">c</span><span class="inline-block hover:animate-bounce2" style="animation-delay: 28s;">
+</span><span class="inline-block hover:animate-bounce3" style="animation-delay: 28.1s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 28.2s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 28.3s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 28.4s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 28.5s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 28.6s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 28.7s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 28.8s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 28.9s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 29s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 29.1s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 29.2s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 29.3s;">e</span><span class="inline-block hover:animate-bounce7" style="animation-delay: 29.4s;">
+</span><span class="inline-block hover:animate-bounce8" style="animation-delay: 29.5s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 29.6s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 29.7s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 29.8s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 29.9s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 30s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 30.1s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 30.2s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 30.3s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 30.4s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 30.5s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 30.6s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 30.7s;">l</span><span class="inline-block hover:animate-bounce3" style="animation-delay: 30.8s;">
+</span><span class="inline-block hover:animate-bounce4" style="animation-delay: 30.9s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 31s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 31.1s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 31.2s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 31.3s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 31.4s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 31.5s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 31.6s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 31.7s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 31.8s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 31.9s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 32s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 32.1s;">l</span><span class="inline-block hover:animate-bounce8" style="animation-delay: 32.2s;">
+</span><span class="inline-block hover:animate-bounce9" style="animation-delay: 32.3s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 32.4s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 32.5s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 32.6s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 32.7s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 32.8s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 32.9s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 33s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 33.1s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 33.2s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 33.3s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 33.4s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 33.5s;">e</span><span class="inline-block hover:animate-bounce4" style="animation-delay: 33.6s;">
+</span><span class="inline-block hover:animate-bounce5" style="animation-delay: 33.7s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 33.8s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 33.9s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 34s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 34.1s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 34.2s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 34.3s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 34.4s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 34.5s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 34.6s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 34.7s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 34.8s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 34.9s;">n</span><span class="inline-block hover:animate-bounce9" style="animation-delay: 35s;">
+</span><span class="inline-block hover:animate-bounce1" style="animation-delay: 35.1s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 35.2s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 35.3s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 35.4s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 35.5s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 35.6s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 35.7s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 35.8s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 35.9s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 36s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 36.1s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 36.2s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 36.3s;">c</span><span class="inline-block hover:animate-bounce5" style="animation-delay: 36.4s;">
+</span><span class="inline-block hover:animate-bounce6" style="animation-delay: 36.5s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 36.6s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 36.7s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 36.8s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 36.9s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 37s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 37.1s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 37.2s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 37.3s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 37.4s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 37.5s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 37.6s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 37.7s;">e</span><span class="inline-block hover:animate-bounce1" style="animation-delay: 37.8s;">
+</span><span class="inline-block hover:animate-bounce2" style="animation-delay: 37.9s;"> </span><span class="inline-block hover:animate-bounce3" style="animation-delay: 38s;"> </span><span class="inline-block hover:animate-bounce4" style="animation-delay: 38.1s;"> </span><span class="inline-block hover:animate-bounce5" style="animation-delay: 38.2s;"> </span><span class="inline-block hover:animate-bounce6" style="animation-delay: 38.3s;"> </span><span class="inline-block hover:animate-bounce7" style="animation-delay: 38.4s;"> </span><span class="inline-block hover:animate-bounce8" style="animation-delay: 38.5s;"> </span><span class="inline-block hover:animate-bounce9" style="animation-delay: 38.6s;"> </span><span class="inline-block hover:animate-bounce1" style="animation-delay: 38.7s;"> </span><span class="inline-block hover:animate-bounce2" style="animation-delay: 38.8s;"> </span></h1>
+          <div class="text-2xl text-gray-600 mb-12 max-w-3xl mx-auto animate-fade-in space-y-4 overflow-hidden" style="animation-delay: 0.2s">
+            <p class="animate-slide-in" style="animation-delay: 0.4s; opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              2nd Year Computer Science Student at AAU
+            </p>
+            <p class="animate-slide-in" style="animation-delay: 0.6s; opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Frontend Developer | Tech Enthusiast | UI/UX Designer
+            </p>
+            <p class="animate-slide-in" style="animation-delay: 0.8s; opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Transforming ideas into exceptional digital experiences through
+              innovative design and cutting-edge development.
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-6 mb-16 animate-fade-in" style="animation-delay: 0.4s">
+            <button class="bg-primary text-white px-12 py-5 !rounded-button hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl whitespace-nowrap text-lg font-medium">
+              View Portfolio
+            </button>
+            <button onclick="scrollToContact()" class="bg-white/80 backdrop-blur-sm border-2 border-primary text-primary px-12 py-5 !rounded-button hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl whitespace-nowrap text-lg font-medium">
+              Let's Connect
+            </button>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto" style="animation-delay: 0.6s; opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+            <div class="bg-white/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="ri-code-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-4xl font-bold text-primary mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">8+</h3>
+              <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Years Experience</p>
+            </div>
+            <div class="bg-white/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="ri-check-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-4xl font-bold text-primary mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">100+</h3>
+              <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Projects Done</p>
+            </div>
+            <div class="bg-white/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="ri-user-smile-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-4xl font-bold text-primary mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">50+</h3>
+              <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Happy Clients</p>
+            </div>
+            <div class="bg-white/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="ri-award-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-4xl font-bold text-primary mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">15+</h3>
+              <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Awards Won</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+    </header>
+    <section id="services" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Services</h2>
+          <p class="text-xl text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+            Comprehensive solutions for your digital needs
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+          <div class="bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+            <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-8">
+              <i class="ri-code-line text-primary text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-6 animate-fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">Website Development</h3>
+            <p class="text-gray-600 text-lg leading-relaxed animate-fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+              Building responsive and visually appealing websites using modern
+              frameworks like React, Vue.js, or Angular with HTML, CSS, and
+              JavaScript. Implementing complex features and ensuring optimal
+              performance across all platforms.
+            </p>
+          </div>
+
+          
+          <div class="bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-8">
+              <i class="ri-layout-line text-secondary text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">UI/UX Implementation</h3>
+            <p class="text-gray-600 text-lg leading-relaxed" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Translating design files into functional web pages while ensuring
+              accessibility and user-friendly navigation. Creating intuitive
+              interfaces that enhance user experience and engagement.
+            </p>
+          </div>
+          <div class="bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+            <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-8">
+              <i class="ri-speed-line text-purple-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Performance Optimization
+            </h3>
+            <p class="text-gray-600 text-lg leading-relaxed" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Improving website loading speed and responsiveness through code
+              and asset optimization. Implementing best practices for caching,
+              lazy loading, and resource management.
+            </p>
+          </div>
+          <div class="bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+            <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mb-8">
+              <i class="ri-git-branch-line text-yellow-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Version Control &amp; Collaboration
+            </h3>
+            <p class="text-gray-600 text-lg leading-relaxed" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Managing Git repositories, handling pull requests, and
+              facilitating team collaboration through code reviews. Implementing
+              efficient branching strategies and maintaining clean commit
+              history.
+            </p>
+          </div>
+          <div class="bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+            <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mb-8">
+              <i class="ri-api-line text-red-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">API Integration</h3>
+            <p class="text-gray-600 text-lg leading-relaxed" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Connecting front-end applications with back-end services using
+              RESTful APIs or GraphQL. Implementing secure authentication,
+              real-time data synchronization, and error handling.
+            </p>
+          </div>
+          <div class="bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+            <div class="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mb-8">
+              <i class="ri-responsive-line text-indigo-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Mobile-Responsive Design
+            </h3>
+            <p class="text-gray-600 text-lg leading-relaxed" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Ensuring cross-browser compatibility and smooth functionality
+              across all devices using modern CSS frameworks. Creating fluid
+              layouts that adapt seamlessly to different screen sizes.
+            </p>
+          </div>
+          <div class="bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+            <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-8">
+              <i class="ri-code-box-line text-purple-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Problem Solving &amp; Algorithms
+            </h3>
+            <p class="text-gray-600 text-lg leading-relaxed" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Active participant in competitive programming platforms with
+              expertise in data structures and algorithms. Regular contributor
+              to open-source projects and coding challenges on GitHub, LeetCode,
+              CodeForces, and HackerRank.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Skills</h2>
+          <p class="text-xl text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+            Technical expertise and professional capabilities
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+          <div>
+            <h3 class="text-2xl font-semibold mb-8" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Technical Skills</h3>
+            <div class="space-y-8">
+              <div class="flex items-center gap-8">
+                <div class="relative w-32 h-32">
+                  <svg class="w-32 h-32 transform -rotate-90">
+                    <circle cx="64" cy="64" r="56" stroke="#E5E7EB" stroke-width="8" fill="none"></circle>
+                    <circle cx="64" cy="64" r="56" stroke="#3B82F6" stroke-width="8" fill="none" class="progress-circle" data-percentage="95" stroke-dasharray="351.8583772020568" stroke-dashoffset="351.8583772020568" style="stroke-dashoffset: 351.858; transition: stroke-dashoffset 1.5s ease-in-out; stroke-dasharray: 351.858, 351.858;"></circle>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-primary">95%</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium">JavaScript/TypeScript</h4>
+                  <p class="text-gray-600 mt-1" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                    Advanced proficiency in modern JavaScript
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-8">
+                <div class="relative w-32 h-32">
+                  <svg class="w-32 h-32 transform -rotate-90">
+                    <circle cx="64" cy="64" r="56" stroke="#E5E7EB" stroke-width="8" fill="none"></circle>
+                    <circle cx="64" cy="64" r="56" stroke="#3B82F6" stroke-width="8" fill="none" class="progress-circle" data-percentage="92" stroke-dasharray="351.8583772020568" stroke-dashoffset="351.8583772020568" style="stroke-dashoffset: 351.858; transition: stroke-dashoffset 1.5s ease-in-out; stroke-dasharray: 351.858, 351.858;"></circle>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-primary">92%</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium">
+                    Data Structures &amp; Algorithms
+                  </h4>
+                  <p class="text-gray-600 mt-1" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                    Advanced problem-solving capabilities
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-8">
+                <div class="relative w-32 h-32">
+                  <svg class="w-32 h-32 transform -rotate-90">
+                    <circle cx="64" cy="64" r="56" stroke="#E5E7EB" stroke-width="8" fill="none"></circle>
+                    <circle cx="64" cy="64" r="56" stroke="#3B82F6" stroke-width="8" fill="none" class="progress-circle" data-percentage="90" stroke-dasharray="351.8583772020568" stroke-dashoffset="351.8583772020568" style="stroke-dashoffset: 351.858; transition: stroke-dashoffset 1.5s ease-in-out; stroke-dasharray: 351.858, 351.858;"></circle>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-primary">90%</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium">React/Vue.js</h4>
+                  <p class="text-gray-600 mt-1" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                    Expert in modern frontend frameworks
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-8">
+                <div class="relative w-32 h-32">
+                  <svg class="w-32 h-32 transform -rotate-90">
+                    <circle cx="64" cy="64" r="56" stroke="#E5E7EB" stroke-width="8" fill="none"></circle>
+                    <circle cx="64" cy="64" r="56" stroke="#3B82F6" stroke-width="8" fill="none" class="progress-circle" data-percentage="88" stroke-dasharray="351.8583772020568" stroke-dashoffset="351.8583772020568" style="stroke-dashoffset: 351.858; transition: stroke-dashoffset 1.5s ease-in-out; stroke-dasharray: 351.858, 351.858;"></circle>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-primary">88%</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium">Competitive Programming</h4>
+                  <p class="text-gray-600 mt-1" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                    Excellent algorithmic thinking
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-8">
+                <div class="relative w-32 h-32">
+                  <svg class="w-32 h-32 transform -rotate-90">
+                    <circle cx="64" cy="64" r="56" stroke="#E5E7EB" stroke-width="8" fill="none"></circle>
+                    <circle cx="64" cy="64" r="56" stroke="#3B82F6" stroke-width="8" fill="none" class="progress-circle" data-percentage="85" stroke-dasharray="351.8583772020568" stroke-dashoffset="351.8583772020568" style="stroke-dashoffset: 351.858; transition: stroke-dashoffset 1.5s ease-in-out; stroke-dasharray: 351.858, 351.858;"></circle>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-primary">85%</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium">Node.js</h4>
+                  <p class="text-gray-600 mt-1" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                    Strong backend development skills
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg mt-8">
+              <h4 class="text-lg font-semibold mb-6">
+                Problem Solving Platforms
+              </h4>
+              <div class="grid grid-cols-2 gap-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                      <i class="ri-code-line text-primary text-xl"></i>
+                    </div>
+                    <div>
+                      <h5 class="font-medium">LeetCode</h5>
+                      <p class="text-sm text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">500+ Problems Solved</p>
+                    </div>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full mt-2">
+                    <div class="h-2 bg-primary rounded-full" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                      <i class="ri-terminal-line text-purple-600 text-xl"></i>
+                    </div>
+                    <div>
+                      <h5 class="font-medium">CodeForces</h5>
+                      <p class="text-sm text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Expert Level (1800+)</p>
+                    </div>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full mt-2">
+                    <div class="h-2 bg-purple-600 rounded-full" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                      <i class="ri-code-box-line text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                      <h5 class="font-medium">HackerRank</h5>
+                      <p class="text-sm text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">5⭐ Gold Badge</p>
+                    </div>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full mt-2">
+                    <div class="h-2 bg-green-600 rounded-full" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <div class="flex items-center mb-2">
+                    <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+                      <i class="ri-github-line text-gray-700 text-xl"></i>
+                    </div>
+                    <div>
+                      <h5 class="font-medium">GitHub</h5>
+                      <p class="text-sm text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">1000+ Contributions</p>
+                    </div>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full mt-2">
+                    <div class="h-2 bg-gray-700 rounded-full" style="width: 88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-8" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Professional Skills</h3>
+            <div class="space-y-8">
+              <div class="flex items-center gap-8">
+                <div class="relative w-32 h-32">
+                  <svg class="w-32 h-32 transform -rotate-90">
+                    <circle cx="64" cy="64" r="56" stroke="#E5E7EB" stroke-width="8" fill="none"></circle>
+                    <circle cx="64" cy="64" r="56" stroke="#10B981" stroke-width="8" fill="none" class="progress-circle" data-percentage="95" stroke-dasharray="351.8583772020568" stroke-dashoffset="351.8583772020568" style="stroke-dashoffset: 351.858; transition: stroke-dashoffset 1.5s ease-in-out; stroke-dasharray: 351.858, 351.858;"></circle>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-secondary">95%</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium">Problem Solving</h4>
+                  <p class="text-gray-600 mt-1" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                    Advanced problem-solving capabilities
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-8">
+                <div class="relative w-32 h-32">
+                  <svg class="w-32 h-32 transform -rotate-90">
+                    <circle cx="64" cy="64" r="56" stroke="#E5E7EB" stroke-width="8" fill="none"></circle>
+                    <circle cx="64" cy="64" r="56" stroke="#10B981" stroke-width="8" fill="none" class="progress-circle" data-percentage="90" stroke-dasharray="351.8583772020568" stroke-dashoffset="351.8583772020568" style="stroke-dashoffset: 351.858; transition: stroke-dashoffset 1.5s ease-in-out; stroke-dasharray: 351.858, 351.858;"></circle>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-secondary">90%</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium">Team Collaboration</h4>
+                  <p class="text-gray-600 mt-1" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                    Excellent team coordination and leadership
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-8">
+                <div class="relative w-32 h-32">
+                  <svg class="w-32 h-32 transform -rotate-90">
+                    <circle cx="64" cy="64" r="56" stroke="#E5E7EB" stroke-width="8" fill="none"></circle>
+                    <circle cx="64" cy="64" r="56" stroke="#10B981" stroke-width="8" fill="none" class="progress-circle" data-percentage="85" stroke-dasharray="351.8583772020568" stroke-dashoffset="351.8583772020568" style="stroke-dashoffset: 351.858; transition: stroke-dashoffset 1.5s ease-in-out; stroke-dasharray: 351.858, 351.858;"></circle>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-secondary">85%</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium">Project Management</h4>
+                  <p class="text-gray-600 mt-1" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                    Efficient project planning and execution
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+          <div class="md:w-1/2">
+            <img src="./elements_files/1d1020a1b8d51cb0d1284d32a9e6c621.jpg" alt="Profile" class="rounded-lg shadow-xl">
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold mb-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">About Me</h2>
+            <p class="text-gray-600 mb-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              With over 8 years of experience in software development, I've had
+              the privilege of working with diverse teams and technologies. My
+              passion lies in creating elegant solutions to complex problems and
+              helping businesses achieve their digital transformation goals.
+            </p>
+            <p class="text-gray-600 mb-8" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              I believe in continuous learning and staying updated with the
+              latest industry trends. When I'm not coding, you can find me
+              contributing to open-source projects or mentoring aspiring
+              developers.
+            </p>
+            <div class="grid grid-cols-2 gap-6" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              <div>
+                <h4 class="font-semibold mb-2">Experience</h4>
+                <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                  <span class="number" data-value="8">8</span>+ Years
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Projects Completed</h4>
+                <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                  <span class="number" data-value="100">100</span>+
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Clients Worldwide</h4>
+                <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                  <span class="number" data-value="50">50</span>+
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Awards</h4>
+                <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                  <span class="number" data-value="15">15</span>+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Featured Projects</h2>
+          <p class="text-xl text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">A selection of my recent work</p>
+          <div class="flex justify-center gap-4 mt-8">
+            <button class="px-6 py-2 !rounded-button bg-primary text-white hover:bg-blue-600 transition duration-300 whitespace-nowrap active">
+              All Projects
+            </button>
+            <button class="px-6 py-2 !rounded-button bg-white text-gray-600 hover:bg-gray-100 transition duration-300 whitespace-nowrap">
+              Web Apps
+            </button>
+            <button class="px-6 py-2 !rounded-button bg-white text-gray-600 hover:bg-gray-100 transition duration-300 whitespace-nowrap">
+              Mobile Apps
+            </button>
+            <button class="px-6 py-2 !rounded-button bg-white text-gray-600 hover:bg-gray-100 transition duration-300 whitespace-nowrap">
+              UI/UX Design
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src="./elements_files/f6a9bf19c5c362c63936ace16be46ca9.jpg" alt="Weather App" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Weather App</h3>
+              <p class="text-gray-600 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                Real-time weather forecasting app with detailed climate
+                information.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">React</span>
+                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">OpenWeather API</span>
+                
+              </div>
+              <a href="file:///C:/Users/hp/Desktop/new.html#" class="text-primary hover:text-blue-700 font-medium cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">View Project →</a>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" alt="Movie App" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Movie App</h3>
+              <p class="text-gray-600 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                Movie browsing application with detailed information and
+                reviews.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                
+              </div>
+              <a href="file:///C:/Users/hp/Desktop/new.html#" class="text-primary hover:text-blue-700 font-medium cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">View Project →</a>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src="./elements_files/4d47f9bdceaafb3c3ad7aed38460073b.jpg" alt="Quiz App" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Quiz App</h3>
+              <p class="text-gray-600 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                Interactive quiz application with multiple categories and
+                scoring system.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
+                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">HTML5</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">CSS3</span>
+              </div>
+              <a href="file:///C:/Users/hp/Desktop/new.html#" class="text-primary hover:text-blue-700 font-medium cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">View Project →</a>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src="./elements_files/f33d36ed7b0115b6779d7ecf32aa547d.jpg" alt="Calculator" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Calculator</h3>
+              <p class="text-gray-600 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                Modern calculator with advanced mathematical functions.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
+                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">HTML5</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">CSS3</span>
+              </div>
+              <a href="file:///C:/Users/hp/Desktop/new.html#" class="text-primary hover:text-blue-700 font-medium cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">View Project →</a>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src="./elements_files/fe005d6fff320e7ef3dc428c0240d815.jpg" alt="QR Code Scanner" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">QR Code Scanner</h3>
+              <p class="text-gray-600 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                Fast and efficient QR code scanner with history tracking.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
+                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">QR Scanner API</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">React.js</span>
+              </div>
+              <a href="file:///C:/Users/hp/Desktop/new.html#" class="text-primary hover:text-blue-700 font-medium cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">View Project →</a>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src="./elements_files/d719e5b68356ce8e5c7cbeffcc238c8f.jpg" alt="Task Manager" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Task Manager</h3>
+              <p class="text-gray-600 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                Collaborative task management platform with real-time updates.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">React</span>
+                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Firebase</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">Material UI</span>
+              </div>
+              <a href="file:///C:/Users/hp/Desktop/new.html#" class="text-primary hover:text-blue-700 font-medium cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">View Project →</a>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src="./elements_files/7fc1101ddf0f276bdaf2bdf774e9ee1d.jpg" alt="E-commerce App" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">E-commerce App</h3>
+              <p class="text-gray-600 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                Full-featured online shopping platform with secure payments.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">React Native</span>
+                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">MongoDB</span>
+              </div>
+              <a href="file:///C:/Users/hp/Desktop/new.html#" class="text-primary hover:text-blue-700 font-medium cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">View Project →</a>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src="./elements_files/cf3bb76007f6f60a069518d009c60b6b.jpg" alt="Fitness Tracker" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Fitness Tracker</h3>
+              <p class="text-gray-600 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                Comprehensive fitness tracking app with personalized workouts.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Flutter</span>
+                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Firebase</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">Charts.js</span>
+              </div>
+              <a href="file:///C:/Users/hp/Desktop/new.html#" class="text-primary hover:text-blue-700 font-medium cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">View Project →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Client Testimonials</h2>
+          <p class="text-xl text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+            What my clients say about working with me
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-6">
+              <img src="./elements_files/d76d2c436feb07e18eddac66d10227c9.jpg" alt="Sarah Johnson" class="w-16 h-16 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-semibold">Sarah Johnson</h4>
+                <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">CEO, TechStart Inc.</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              "Working with John was an absolute pleasure. His technical
+              expertise and attention to detail resulted in a product that
+              exceeded our expectations."
+            </p>
+            <div class="flex mt-4 text-yellow-400">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-6">
+              <img src="./elements_files/7159ac1312842507eeb8ca47b59a3970.jpg" alt="Michael Chen" class="w-16 h-16 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-semibold">Michael Chen</h4>
+                <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Founder, InnovateLab</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              "John's ability to understand our vision and translate it into a
+              functional product was impressive. He's a true professional who
+              delivers results."
+            </p>
+            <div class="flex mt-4 text-yellow-400">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-6">
+              <img src="./elements_files/743499bfc53afeae27c55adabefcdbf3.jpg" alt="David Miller" class="w-16 h-16 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-semibold">David Miller</h4>
+                <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">CTO, GlobalTech Solutions</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              "The level of communication and professionalism throughout the
+              project was outstanding. John is a skilled developer who truly
+              cares about his clients' success."
+            </p>
+            <div class="flex mt-4 text-yellow-400">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Get in Touch</h2>
+          <p class="text-xl text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Let's discuss your next project</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+          <div>
+            <form id="contactForm" class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none" required="">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none" required="">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none" required=""></textarea>
+              </div>
+              <button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-blue-600 transition duration-300 cursor-pointer whitespace-nowrap">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-2xl font-semibold mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Contact Information</h3>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                    <i class="ri-mail-line text-primary"></i>
+                  </div>
+                  <div>
+                    <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Email</p>
+                    <p class="font-medium" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">john.anderson@example.com</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                    <i class="ri-phone-line text-primary"></i>
+                  </div>
+                  <div>
+                    <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Phone</p>
+                    <p class="font-medium" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                    <i class="ri-map-pin-line text-primary"></i>
+                  </div>
+                  <div>
+                    <p class="text-gray-600" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Location</p>
+                    <p class="font-medium" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">San Francisco, CA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Follow Me</h3>
+              <div class="flex space-x-4">
+                <a href="file:///C:/Users/hp/Desktop/new.html#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300 cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                  <i class="ri-github-line text-gray-600"></i>
+                </a>
+                <a href="file:///C:/Users/hp/Desktop/new.html#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300 cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                  <i class="ri-linkedin-line text-gray-600"></i>
+                </a>
+                <a href="file:///C:/Users/hp/Desktop/new.html#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300 cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                  <i class="ri-twitter-line text-gray-600"></i>
+                </a>
+                <a href="file:///C:/Users/hp/Desktop/new.html#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300 cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+                  <i class="ri-dribbble-line text-gray-600"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+          <div class="col-span-2">
+            <div class="font-[&#39;Pacifico&#39;] text-2xl text-white mb-4">logo</div>
+            <p class="text-gray-400" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Creating innovative digital solutions with a focus on user
+              experience and performance.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="file:///C:/Users/hp/Desktop/new.html#services" class="text-gray-400 hover:text-white transition duration-300 cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Services</a>
+              </li>
+              <li>
+                <a href="file:///C:/Users/hp/Desktop/new.html#about" class="text-gray-400 hover:text-white transition duration-300 cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">About</a>
+              </li>
+              <li>
+                <a href="file:///C:/Users/hp/Desktop/new.html#projects" class="text-gray-400 hover:text-white transition duration-300 cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Projects</a>
+              </li>
+              <li>
+                <a href="file:///C:/Users/hp/Desktop/new.html#contact" class="text-gray-400 hover:text-white transition duration-300 cursor-pointer" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+            <p class="text-gray-400 mb-4" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">
+              Subscribe to receive updates and news.
+            </p>
+            <form class="flex">
+              <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-l focus:outline-none text-gray-900">
+              <button type="submit" class="bg-primary px-4 py-2 rounded-r hover:bg-blue-600 transition duration-300 cursor-pointer whitespace-nowrap">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p class="text-gray-400" style="opacity: 0; transform: translateY(20px); transition: 0.6s ease-out;">© 2025 All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const title = document.getElementById("animatedTitle");
+        if (title) {
+          const letters = title.textContent.split("");
+          title.textContent = "";
+          letters.forEach((letter, i) => {
+            const span = document.createElement("span");
+            span.textContent = letter;
+            span.className = `inline-block hover:animate-bounce${(i % 9) + 1}`;
+            span.style.animationDelay = `${i * 0.1}s`;
+            title.appendChild(span);
+          });
+        }
+        const projectButtons = document.querySelectorAll("#projects button");
+        projectButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            projectButtons.forEach((btn) =>
+              btn.classList.remove("bg-primary", "text-white"),
+            );
+            projectButtons.forEach((btn) =>
+              btn.classList.add("bg-white", "text-gray-600"),
+            );
+            this.classList.remove("bg-white", "text-gray-600");
+            this.classList.add("bg-primary", "text-white");
+          });
+        });
+      });
+      function scrollToContact() {
+        const contactSection = document.querySelector("#contact");
+        contactSection.scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => {
+          document.getElementById("name").focus();
+        }, 1000);
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        const title = document.getElementById("animatedTitle");
+        if (title) {
+          const letters = title.textContent.split("");
+          title.textContent = "";
+          letters.forEach((letter, i) => {
+            const span = document.createElement("span");
+            span.textContent = letter;
+            span.className = `inline-block hover:animate-bounce${(i % 9) + 1}`;
+            span.style.animationDelay = `${i * 0.1}s`;
+            title.appendChild(span);
+          });
+        }
+        function animateNumber(el, start = 0, end, duration = 2000) {
+          let startTimestamp = null;
+          const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            el.textContent = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            }
+          };
+          window.requestAnimationFrame(step);
+        }
+        const numberElements = document.querySelectorAll(".number");
+        const numberObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = entry.target;
+                const value = parseInt(target.getAttribute("data-value"));
+                animateNumber(target, 0, value);
+                numberObserver.unobserve(target);
+              }
+            });
+          },
+          {
+            threshold: 0.5,
+          },
+        );
+        numberElements.forEach((number) => {
+          numberObserver.observe(number);
+        });
+        const progressCircles = document.querySelectorAll(".progress-circle");
+        const circleObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const circle = entry.target;
+                const percentage = circle.getAttribute("data-percentage");
+                const circumference = 2 * Math.PI * 56; // r = 56
+                const offset = circumference - (percentage / 100) * circumference;
+                circle.style.transition = "stroke-dashoffset 1.5s ease-in-out";
+                circle.style.strokeDasharray = `${circumference} ${circumference}`;
+                circle.style.strokeDashoffset = offset;
+              } else {
+                entry.target.style.strokeDashoffset =
+                  entry.target.getAttribute("stroke-dasharray");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "-50px",
+          },
+        );
+        progressCircles.forEach((circle) => {
+          circleObserver.observe(circle);
+        });
+        const animatedElements = document.querySelectorAll("h1, h2, h3, p, .grid, a");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fade-in");
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+              } else {
+                entry.target.classList.remove("animate-fade-in");
+                entry.target.style.opacity = "0";
+                entry.target.style.transform = "translateY(20px)";
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "-50px",
+          },
+        );
+        animatedElements.forEach((element) => {
+          element.style.opacity = "0";
+          element.style.transform = "translateY(20px)";
+          element.style.transition = "all 0.6s ease-out";
+          observer.observe(element);
+        });
+        function updateActiveLink() {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            if (window.pageYOffset >= sectionTop - 100) {
+              current = section.getAttribute("id");
+            }
+          });
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").slice(1) === current) {
+              link.classList.add("active");
+            }
+          });
+        }
+        window.addEventListener("scroll", function () {
+          updateActiveLink();
+          if (window.scrollY > 100) {
+            nav.classList.add("shadow-sm");
+          } else {
+            nav.classList.remove("shadow-sm");
+          }
+        });
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(contactForm);
+          const data = Object.fromEntries(formData);
+          const notification = document.createElement("div");
+          notification.className =
+            "fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg transform transition-all duration-500 translate-y-0";
+          notification.textContent = "Message sent successfully!";
+          document.body.appendChild(notification);
+          setTimeout(() => {
+            notification.classList.add("translate-y-full", "opacity-0");
+            setTimeout(() => notification.remove(), 500);
+          }, 3000);
+          contactForm.reset();
+        });
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  
+
+</body></html>
