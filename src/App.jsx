@@ -95,7 +95,7 @@ function App() {
                      }}>
                      <h2 id="icons"
                      style={{
-                        fontSize:"20px",
+                        fontSize:"25px",
                         fontWeight:"bold",
                        color:"black",
                      
@@ -105,12 +105,12 @@ function App() {
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
                         color:" rgba(3, 103, 255, 0.801)",
-                     }}>2+</h2>
+                     }}>5000+</h2>
                      <h7 style={{
                         fontSize:"15px",
                         fontWeight:"bold",
                          fontFamily:" 'Nunito', sans-serif",
-                     }}>Years Experience</h7>
+                     }}>Hours of Coding</h7>
                   </div>
                   <div id= "experianceblocks"  style={{
                         display:"flex",
@@ -122,7 +122,7 @@ function App() {
                      }}>
                      <h2 id="icons"
                      style={{
-                        fontSize:"20px",
+                        fontSize:"30px",
                         fontWeight:"bold",
                         color:" rgba(3, 103, 255, 0.801)",
                      }}
@@ -145,20 +145,25 @@ function App() {
                         justifyContent:"center",
                         alignItems:"center",
                         gap:"10px",
+                       
                         flexWrap:"wrap",
                      }}>
-                     <h2 id="icons" >&lt;/&gt;</h2>
+                     <h2 id="icons" style={{
+                        paddingTop:"8px",
+                        color:"#ce13d1",
+                         fontSize:"30px",
+                     }} >◎</h2>
                      <h2 style={{
                         fontSize:"30px",
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
                         color:" rgba(3, 103, 255, 0.801)",
-                     }}>2+</h2>
+                     }}>30+</h2>
                      <h7 style={{
                         fontSize:"15px",
                         fontWeight:"bold",
                          fontFamily:" 'Nunito', sans-serif",
-                     }}>Years Experience</h7>
+                     }}>Projects completed</h7>
                   </div>
                   <div id= "experianceblocks"  style={{
                         display:"flex",
@@ -168,18 +173,22 @@ function App() {
                         gap:"10px",
                         flexWrap:"wrap",
                      }}>
-                     <h2 id="icons">&lt;&gt;</h2>
+                     <h2 id="icons" Style={{
+                        fontFamily:"'Nunito', sans-serif",
+                        fontSize:"0px",
+                        paddingTop:"0px",
+                     }}>&#9889;</h2>
                      <h2 style={{
                         fontSize:"30px",
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
                         color:" rgba(3, 103, 255, 0.801)",
-                     }}>2+</h2>
+                     }}>700+</h2>
                      <h7 style={{
                         fontSize:"15px",
                         fontWeight:"bold",
                          fontFamily:" 'Nunito', sans-serif",
-                     }}>Years Experience</h7>
+                     }}>Github Contributions</h7>
                   </div>
           </div>
           </div>
@@ -188,7 +197,7 @@ function App() {
      textAlign:"center",
      fontSize:"35px",
      fontWeight:"bold",
-     marginBottom:"0px",
+     marginBottom:"-50px",
         
   }}>
          About Me
@@ -244,11 +253,13 @@ function App() {
           textAlign:"center",
           fontFamily: "'Nunito', sans-serif",
         }}>
-            <h2 style={{
-               textAlign:"center",
-               fontWeight:"bold",
-               fontFamily: "'Nunito', sans-serif",
-            }}>About Me</h2>
+            <h2 id="icons"
+                     style={{
+                         margin:"auto",
+                        fontSize:"23px",
+                        fontWeight:"bold",
+                        backgroundColor:"#FFD480",
+                     }}>&#x2705;</h2>
 Welcome!   Thank you for visiting my website and getting ready to know me better.
 My name is Samuel Asmare , I am a second year Computer Science student at Addis Ababa University.  I am currently developing my skills on designing engaging and user-friendly websites and real life problem solving. As an aspiring frontend developer , I specialize in creating responsive and dynamic websites that focuses on not only aesthetics background but also on functionality.
 Experience
@@ -871,7 +882,7 @@ style={{
          <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
          style={{
             width:"100%",
-            height:"60%",
+            height:"50%",
             borderRadius:"10px 10px 0px 0px",
          }}></img>
          <h2 
@@ -884,6 +895,49 @@ style={{
                         color:"black",
                
                      }}>Movie App</h2>
+                     <div id="technologiesused">
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"70px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#99f1b9",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        React.js
+                     </h6>
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#f0d2f6",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        Movie API
+                     </h6>
+                   <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                       
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#cdf7f7",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        Bootstrap
+                     </h6>
+                     </div>
+
                      <h5 
                       style={{
                         fontSize:"16px",
@@ -899,11 +953,11 @@ style={{
                      </button>
        </div>
        {/* Qrcode scanner */}
-   <div id="eachproject">
-         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+    <div id="eachproject">
+         <img src=".\elements_files\fe005d6fff320e7ef3dc428c0240d815.jpg" 
          style={{
             width:"100%",
-            height:"60%",
+            height:"50%",
             borderRadius:"10px 10px 0px 0px",
          }}></img>
          <h2 
@@ -915,7 +969,50 @@ style={{
                         fontFamily:"sans-serif",
                         color:"black",
                
-                     }}>Movie App</h2>
+                     }}>QR Code Scanner</h2>
+                     <div id="technologiesused">
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"70px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#99f1b9",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        React.js
+                     </h6>
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#f0d2f6",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        HTML5
+                     </h6>
+                   <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                       
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#cdf7f7",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        Canvas
+                     </h6>
+                     </div>
+
                      <h5 
                       style={{
                         fontSize:"16px",
@@ -924,18 +1021,18 @@ style={{
                          fontFamily:"'Nunito', sans-serif"
                
                      }}>
-                        Movie browsing application with detailed information and reviews.
+                     Fast and efficient QR code scanner that accepts uploaded image and live scanning. 
                      </h5>
                      <button id="viewtheproject">
                         View project
                      </button>
        </div>
        {/* Quiz App */}
-      <div id="eachproject">
-         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+        <div id="eachproject">
+         <img src="./elements_files\4d47f9bdceaafb3c3ad7aed38460073b.jpg" 
          style={{
             width:"100%",
-            height:"60%",
+            height:"50%",
             borderRadius:"10px 10px 0px 0px",
          }}></img>
          <h2 
@@ -947,7 +1044,50 @@ style={{
                         fontFamily:"sans-serif",
                         color:"black",
                
-                     }}>Movie App</h2>
+                     }}>Quiz App</h2>
+                     <div id="technologiesused">
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"70px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#99f1b9",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                       JavaScript
+                     </h6>
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#f0d2f6",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        HTML5
+                     </h6>
+                   <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                       
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#cdf7f7",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                       CSS3
+                     </h6>
+                     </div>
+
                      <h5 
                       style={{
                         fontSize:"16px",
@@ -956,18 +1096,17 @@ style={{
                          fontFamily:"'Nunito', sans-serif"
                
                      }}>
-                        Movie browsing application with detailed information and reviews.
-                     </h5>
+Interactive quiz application with multiple categories and scoring system.                     </h5>
                      <button id="viewtheproject">
                         View project
                      </button>
        </div>
        {/* Password Generator */}
-        <div id="eachproject">
-         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+      <div id="eachproject">
+         <img src="./elements_files/pass2.jpg" 
          style={{
             width:"100%",
-            height:"60%",
+            height:"50%",
             borderRadius:"10px 10px 0px 0px",
          }}></img>
          <h2 
@@ -979,7 +1118,50 @@ style={{
                         fontFamily:"sans-serif",
                         color:"black",
                
-                     }}>Movie App</h2>
+                     }}>Password Generator</h2>
+                     <div id="technologiesused">
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"70px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#99f1b9",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        React.js
+                     </h6>
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#f0d2f6",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        HTML
+                     </h6>
+                   <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                       
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#cdf7f7",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        Bootstrap
+                     </h6>
+                     </div>
+
                      <h5 
                       style={{
                         fontSize:"16px",
@@ -988,18 +1170,18 @@ style={{
                          fontFamily:"'Nunito', sans-serif"
                
                      }}>
-                        Movie browsing application with detailed information and reviews.
+                     Password Generator application that prompts the user to enter type of characters.
                      </h5>
                      <button id="viewtheproject">
                         View project
                      </button>
        </div>
        {/* Weather App */}
-       <div id="eachproject">
-         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+        <div id="eachproject">
+         <img src=".\elements_files\f6a9bf19c5c362c63936ace16be46ca9.jpg" 
          style={{
             width:"100%",
-            height:"60%",
+            height:"50%",
             borderRadius:"10px 10px 0px 0px",
          }}></img>
          <h2 
@@ -1011,7 +1193,51 @@ style={{
                         fontFamily:"sans-serif",
                         color:"black",
                
-                     }}>Movie App</h2>
+                     }}>Weather App</h2>
+                     <div id="technologiesused">
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"70px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#99f1b9",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        React.js
+                     </h6>
+                     <h6 style={{
+                        fontSize:"10px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                        fontWeight:"bold",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#f0d2f6",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        OpenWeather API
+                     </h6>
+                   <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                       
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#cdf7f7",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        Bootstrap
+                     </h6>
+                     </div>
+
                      <h5 
                       style={{
                         fontSize:"16px",
@@ -1020,18 +1246,17 @@ style={{
                          fontFamily:"'Nunito', sans-serif"
                
                      }}>
-                        Movie browsing application with detailed information and reviews.
-                     </h5>
+Real-time weather forecasting app with detailed climate information.                     </h5>
                      <button id="viewtheproject">
                         View project
                      </button>
        </div>
        {/* Calculator */}
-       <div id="eachproject">
-         <img src="./elements_files/dd6121e766fd77fe0007e51453405ced.jpg" 
+  <div id="eachproject">
+         <img src=".\elements_files\f33d36ed7b0115b6779d7ecf32aa547d.jpg" 
          style={{
             width:"100%",
-            height:"60%",
+            height:"50%",
             borderRadius:"10px 10px 0px 0px",
          }}></img>
          <h2 
@@ -1043,7 +1268,50 @@ style={{
                         fontFamily:"sans-serif",
                         color:"black",
                
-                     }}>Movie App</h2>
+                     }}>Calculator</h2>
+                     <div id="technologiesused">
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"70px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#99f1b9",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                       JavaScript
+                     </h6>
+                     <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#f0d2f6",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                       HTML5
+                     </h6>
+                   <h6 style={{
+                        fontSize:"13px",
+                         marginLeft:"30px",
+                        color:"black",
+                        width:"100px",
+                        textAlign:"center",
+                       
+                         fontFamily:"'Nunito', sans-serif",
+                         backgroundColor:"#cdf7f7",
+                         borderRadius:"10px",
+                         padding:"5px",
+                     }}>
+                        CSS3
+                     </h6>
+                     </div>
+
                      <h5 
                       style={{
                         fontSize:"16px",
@@ -1052,8 +1320,7 @@ style={{
                          fontFamily:"'Nunito', sans-serif"
                
                      }}>
-                        Movie browsing application with detailed information and reviews.
-                     </h5>
+                    Modern calculator with advanced mathematical functions.                  </h5>
                      <button id="viewtheproject">
                         View project
                      </button>
