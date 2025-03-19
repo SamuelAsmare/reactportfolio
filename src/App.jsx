@@ -900,7 +900,7 @@ style={{
                         fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"70px",
+                        width:"45px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#99f1b9",
@@ -913,7 +913,7 @@ style={{
                         fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"70px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#f0d2f6",
@@ -926,7 +926,7 @@ style={{
                         fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"80px",
                         textAlign:"center",
                        
                          fontFamily:"'Nunito', sans-serif",
@@ -972,10 +972,10 @@ style={{
                      }}>QR Code Scanner</h2>
                      <div id="technologiesused">
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"70px",
+                        width:"45px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#99f1b9",
@@ -985,10 +985,10 @@ style={{
                         React.js
                      </h6>
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"70px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#f0d2f6",
@@ -998,10 +998,10 @@ style={{
                         HTML5
                      </h6>
                    <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"80px",
                         textAlign:"center",
                        
                          fontFamily:"'Nunito', sans-serif",
@@ -1047,10 +1047,10 @@ style={{
                      }}>Quiz App</h2>
                      <div id="technologiesused">
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"70px",
+                        width:"55px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#99f1b9",
@@ -1060,10 +1060,10 @@ style={{
                        JavaScript
                      </h6>
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"50px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#f0d2f6",
@@ -1073,10 +1073,10 @@ style={{
                         HTML5
                      </h6>
                    <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"50px",
                         textAlign:"center",
                        
                          fontFamily:"'Nunito', sans-serif",
@@ -1121,10 +1121,10 @@ Interactive quiz application with multiple categories and scoring system.       
                      }}>Password Generator</h2>
                      <div id="technologiesused">
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"70px",
+                        width:"45px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#99f1b9",
@@ -1134,10 +1134,10 @@ Interactive quiz application with multiple categories and scoring system.       
                         React.js
                      </h6>
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"50px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#f0d2f6",
@@ -1147,10 +1147,10 @@ Interactive quiz application with multiple categories and scoring system.       
                         HTML
                      </h6>
                    <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"60px",
                         textAlign:"center",
                        
                          fontFamily:"'Nunito', sans-serif",
@@ -1196,10 +1196,10 @@ Interactive quiz application with multiple categories and scoring system.       
                      }}>Weather App</h2>
                      <div id="technologiesused">
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"70px",
+                        width:"45px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#99f1b9",
@@ -1213,8 +1213,7 @@ Interactive quiz application with multiple categories and scoring system.       
                          marginLeft:"30px",
                         color:"black",
                         width:"100px",
-                        textAlign:"center",
-                        fontWeight:"bold",
+                        textAlign:"center",         
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#f0d2f6",
                          borderRadius:"10px",
@@ -1223,10 +1222,10 @@ Interactive quiz application with multiple categories and scoring system.       
                         OpenWeather API
                      </h6>
                    <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"55px",
                         textAlign:"center",
                        
                          fontFamily:"'Nunito', sans-serif",
@@ -1271,10 +1270,10 @@ Real-time weather forecasting app with detailed climate information.            
                      }}>Calculator</h2>
                      <div id="technologiesused">
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"70px",
+                        width:"60px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#99f1b9",
@@ -1284,10 +1283,10 @@ Real-time weather forecasting app with detailed climate information.            
                        JavaScript
                      </h6>
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"50px",
                         textAlign:"center",
                          fontFamily:"'Nunito', sans-serif",
                          backgroundColor:"#f0d2f6",
@@ -1297,10 +1296,10 @@ Real-time weather forecasting app with detailed climate information.            
                        HTML5
                      </h6>
                    <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
-                        width:"100px",
+                        width:"50px",
                         textAlign:"center",
                        
                          fontFamily:"'Nunito', sans-serif",
