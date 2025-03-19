@@ -188,7 +188,7 @@ function App() {
                         fontSize:"15px",
                         fontWeight:"bold",
                          fontFamily:" 'Nunito', sans-serif",
-                     }}>Github Contributions</h7>
+                     }}>Contributions</h7>
                   </div>
           </div>
           </div>
@@ -897,7 +897,7 @@ style={{
                      }}>Movie App</h2>
                      <div id="technologiesused">
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
                         width:"70px",
@@ -910,7 +910,7 @@ style={{
                         React.js
                      </h6>
                      <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
                         width:"100px",
@@ -923,7 +923,7 @@ style={{
                         Movie API
                      </h6>
                    <h6 style={{
-                        fontSize:"13px",
+                        fontSize:"10px",
                          marginLeft:"30px",
                         color:"black",
                         width:"100px",
