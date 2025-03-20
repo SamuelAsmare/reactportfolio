@@ -80,11 +80,11 @@ function App() {
             <button id="connect">
               Let's Connect
             </button>
-            <img id="github" src="./git.png">
+            {/* <img id="github" src="./git.png">
               
             </img>
             <img id="linkedin" src="./lin.png">
-            </img>
+            </img> */}
          </div>
           
           <div id="awards">
@@ -798,7 +798,7 @@ Active participant in competitive programming platforms with expertise in data s
                         color:"white",
                          borderRadius:"10px",
                         backgroundColor:"#106bec",
-                     }}>Py</h2>
+                     }}>🐍</h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -1475,36 +1475,52 @@ Real-time weather forecasting app with detailed climate information.            
       <div id="logo" style={{
          width:"400px",
       }}>
-        <h3  style={{textAlign:"center"}}>
+        <h3  style={{textAlign:"center",fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"}}>
          Logo
         </h3>
-        <h6>
+        <h6 style={{fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"}}>
          Creating innovative digital solutions with a focus on user experience and performance.
         </h6>
       </div>
       <div id="quicklinks">
-      <h3  style={{textAlign:"center"}}>Quick Links</h3>
-      <h6  style={{textAlign:"center"}}>
+      <h3  style={{textAlign:"center",
+         fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"
+      }}>Quick Links</h3>
+      <h6  style={{textAlign:"center",
+         fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"
+      }}>
          Services
       </h6>
-      <h6  style={{textAlign:"center"}}>
+      <h6  style={{textAlign:"center",
+         fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"
+      }}>
          About
       </h6>
-      <h6  style={{textAlign:"center"}}>
+      <h6  style={{textAlign:"center",fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"}}>
          Services
       </h6>
-      <h6 style={{textAlign:"center"}}>
+      <h6 style={{textAlign:"center",fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"}}>
          Skills
       </h6>
-      <h6  style={{textAlign:"center"}}>
+      <h6  style={{textAlign:"center",fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"}}>
         Projects
       </h6>
       </div>
       <div id="newsletter">
-          <h3 style={{textAlign:"center"}}>
+          <h3 style={{textAlign:"center",fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"}}>
             Newsletter
           </h3>
-          <h6  style={{textAlign:"center"}}>
+          <h6  style={{textAlign:"center",fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"}}>
             Subscribe to receive updates and news.
           </h6>
           <input type="email" placeholder="Email..." style={{
@@ -1517,7 +1533,7 @@ Real-time weather forecasting app with detailed climate information.            
             fontWeight:"bold",
             fontSize:"16px",
  
-          }}></input>
+          }} required></input>
           <button style={{
             backgroundColor:"#99f1b9",
             color:"black",
@@ -1532,7 +1548,10 @@ Real-time weather forecasting app with detailed climate information.            
       </div>
    </div>
    <div id="footer">
-      <h6  style={{textAlign:"center"}}>
+      <h6  style={{textAlign:"center",
+         fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif"
+      }}>
          Copyright &copy; Samuel Asmare. All rights reserved.
       </h6>
    </div>
