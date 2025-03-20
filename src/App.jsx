@@ -39,7 +39,7 @@ function App() {
          }}>
              <h1 className="text-center p-3 mb-5 mt-4 fw-bold " id="craft"
               >
-              I am Samuel Adane
+              I am Samuel Asmare
              </h1>
          </div>
          
