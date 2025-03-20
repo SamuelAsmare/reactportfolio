@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css'
+import {toviewaboutme, toviewcontact,toviewservices,toviewskills,toviewprojects} from './navigation.jsx';
 
 import '@fontsource/roboto'; // Default weight is 400.
 
@@ -9,22 +10,22 @@ function App() {
   return (
      <div id="app">
       <div id="hea">
-       <div id="navs"  title="home">
-        Home
+        <div id="navs"  title="home">
+        <a href="#" style={{ color:"black", textDecoration:"none"}}>Home</a>
        </div>
-       <div id="navs" title="aboutme">
+       <div id="navs" title="aboutme" onClick={toviewaboutme}>
        About
        </div>
-      <div id="navs">
+      <div id="navs" onClick={toviewservices}>
          Services
        </div>
-       <div id="navs">
+       <div id="navs" onclick={toviewskills} >
         Skills
        </div>
-       <div id="navs">
+       <div id="navs" onClick={toviewprojects}>
        Portfolio
        </div>
-       <div id="navs">
+       <div id="navs" onCLick={toviewcontact}>
       Contact
        </div>
       </div>
@@ -270,7 +271,7 @@ Experience
       
       </div>
 <div>
-   <h1 style={{
+   <h1 id="serviceheader" style={{
       fontSize:"40px",
       textAlign:"center",
       fontWeight:"bold",
