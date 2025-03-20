@@ -19,13 +19,13 @@ function App() {
       <div id="navs" onClick={toviewservices}>
          Services
        </div>
-       <div id="navs" onclick={toviewskills} >
+       <div id="navs" onClick={toviewskills} >
         Skills
        </div>
        <div id="navs" onClick={toviewprojects}>
        Portfolio
        </div>
-       <div id="navs" onCLick={toviewcontact}>
+       <div id="navs" onClick={toviewcontact}>
       Contact
        </div>
       </div>
@@ -88,7 +88,7 @@ function App() {
          </div>
           
           <div id="awards">
-                  <div id= "experianceblocks" style={{
+                  <a href="#"style={{ textDecoration:"none",}}><div id= "experianceblocks" style={{
                         display:"flex",
                         flexDirection:"column",
                         justifyContent:"center",
@@ -101,21 +101,25 @@ function App() {
                         fontSize:"25px",
                         fontWeight:"bold",
                        color:"black",
+                       textDecoration:"none",
                      
                      }}>&lt; &gt;</h2>
                      <h2 style={{
                         fontSize:"30px",
                         fontWeight:"bold",
                         fontFamily:"sans-serif",
+                         textDecoration:"none",
                         color:" rgba(3, 103, 255, 0.801)",
                      }}>5000+</h2>
                      <h7 style={{
                         fontSize:"15px",
                         fontWeight:"bold",
+                         textDecoration:"none",
+                            color:"black",
                          fontFamily:" 'Nunito', sans-serif",
                      }}>Hours of Coding</h7>
-                  </div>
-                  <div id= "experianceblocks"  style={{
+                  </div></a>
+                  <a href="#" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
                         display:"flex",
                         flexDirection:"column",
                         justifyContent:"center",
@@ -139,10 +143,11 @@ function App() {
                      <h7 style={{
                         fontSize:"15px",
                         fontWeight:"bold",
+                           color:"black",
                          fontFamily:" 'Nunito', sans-serif",
                      }}>Problems solved</h7>
-                  </div>
-                  <div id= "experianceblocks"  style={{
+                  </div></a>
+                   <a href="#" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
                         display:"flex",
                         flexDirection:"column",
                         justifyContent:"center",
@@ -165,10 +170,11 @@ function App() {
                      <h7 style={{
                         fontSize:"15px",
                         fontWeight:"bold",
+                           color:"black",
                          fontFamily:" 'Nunito', sans-serif",
                      }}>Projects completed</h7>
-                  </div>
-                  <div id= "experianceblocks"  style={{
+                  </div></a>
+                  <a href="#" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
                         display:"flex",
                         flexDirection:"column",
                         justifyContent:"center",
@@ -187,12 +193,13 @@ function App() {
                         fontFamily:"sans-serif",
                         color:" rgba(3, 103, 255, 0.801)",
                      }}>700+</h2>
-                     <h7 style={{
+                     <h7 id ="contribution "style={{
                         fontSize:"15px",
                         fontWeight:"bold",
+                        color:"black",
                          fontFamily:" 'Nunito', sans-serif",
                      }}>Contributions</h7>
-                  </div>
+                  </div> </a>
           </div>
           </div>
   
@@ -270,6 +277,7 @@ Experience
         </div>
       
       </div>
+      <h1 id="serv">  </h1>
 <div>
    <h1 id="serviceheader" style={{
       fontSize:"40px",

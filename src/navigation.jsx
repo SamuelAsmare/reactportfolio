@@ -1,34 +1,34 @@
 const toviewaboutme=()=>{
         
-document.getElementById('abouttitle').scrollIntoView({
+document.getElementById('contribution ').scrollIntoView({
                 
             });
         
 }
 const toviewservices=()=>{
         
-document.getElementById('serviceheader').scrollIntoView({
+document.getElementById('serv').scrollIntoView({
                 
             });
         
 }
 const toviewskills=()=>{
         
-document.getElementById('abouttitle').scrollIntoView({
+document.getElementById('skillpage').scrollIntoView({
                 
             });
         
 }
 const toviewprojects=()=>{
         
-document.getElementById('abouttitle').scrollIntoView({
+document.getElementById('projectspage').scrollIntoView({
                 
             });
         
 }
 const toviewcontact=()=>{
         
-document.getElementById('abouttitle').scrollIntoView({
+document.getElementById('getintouchpage').scrollIntoView({
                 
             });
         
