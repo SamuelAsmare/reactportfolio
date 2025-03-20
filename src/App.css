@@ -581,13 +581,15 @@ transform:translateY(-20px);
     display: flex;
     justify-content: end;
     padding-right: 5px;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom:20px;
+
     gap: 10px;
     
 }
 
 #navs{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
    font-family: 'Nunito', sans-serif;
 }
