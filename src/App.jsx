@@ -11,7 +11,7 @@ function App() {
      <div id="app">
       <div id="hea">
         <div id="navs"  title="home">
-        <a href="#" style={{ color:"black", textDecoration:"none"}}>Home</a>
+        <a href="#" style={{textDecoration:"none"}} id="navs">Home</a>
        </div>
        <div id="navs" title="aboutme" onClick={toviewaboutme}>
        About
@@ -223,7 +223,7 @@ function App() {
         </div>
           <div id="phone"  style={{
                fontSize:"10px",
-               textAlign:"center",
+               textAlign:"right",
                fontWeight:"bold",
             }} >
                <h3 style={{
@@ -268,12 +268,10 @@ function App() {
                          margin:"auto",
                         fontSize:"23px",
                         fontWeight:"bold",
-                        backgroundColor:"#FFD480",
+                        paddingTop:"12px",
+                        backgroundColor:"#AAA990",
                      }}>&#x2705;</h2>
-Welcome!   Thank you for visiting my website and getting ready to know me better.
-My name is Samuel Asmare , I am a second year Computer Science student at Addis Ababa University.  I am currently developing my skills on designing engaging and user-friendly websites and real life problem solving. As an aspiring frontend developer , I specialize in creating responsive and dynamic websites that focuses on not only aesthetics background but also on functionality.
-Experience
-8+ Years
+I am a second year Computer Science student at Addis Ababa University.  I am currently developing my skills on designing engaging and user-friendly websites and real life problem solving. As an aspiring frontend developer , I specialize in creating responsive and dynamic websites that focuses on not only aesthetics background but also on functionality.
         </div>
       
       </div>

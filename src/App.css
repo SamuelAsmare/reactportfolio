@@ -27,31 +27,33 @@ body{
  position: sticky;
     top:0px;
     z-index:100;
-  background-color: white;
+  background-color: rgb(13, 49, 59);
   display: flex;
   justify-content: end;
   padding-right: 50px;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom:10px;
   gap: 20px;
   width: 100%;
+  
   overflow: hidden;
 }
 
 
 #navs{
   font-size:16px;
-  color:black;
+  color:white;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
    font-family: 'Nunito', sans-serif;
   
 }
 #navs:hover{
-  color:rgb(5, 101, 205);
+  color:rgb(68, 220, 240);
   cursor:pointer;
   transform:scale(1.1);
   transition: 0.1s ease-in-out;
-  text-decoration:underline;
+  text-decoration:none;
 }#homepage{
   display: flex;
   flex-direction: column;
@@ -218,7 +220,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     gap:20px;
-    justify-content:space-evenly;
+    justify-content:center;
     font-family: 'Lora',serif;
     color:#0b204e;
   }
@@ -246,12 +248,19 @@ body{
 }
 #description{
   border-radius: 10px;
-
-  width: 600px;
+    animation: scal  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+  width: 500px;
   padding:0px;
   margin: 0px;
   font-size:18px;
   
+}
+#phone{
+  animation: bottom  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
 }
 #services{
   margin:auto;
@@ -267,8 +276,35 @@ body{
   font-family: 'Lora',serif;
   color:#0b204e;
 }
-@scroll-timeline --my-timeline {
-  source: view();
+#services div:nth-child(1){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(2){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(3){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(4){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(5){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(6){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
 }
 #eachservice{
      width:550px;
@@ -301,6 +337,51 @@ body{
   gap: 40px;
   align-items: center;
   justify-content: center;
+}
+#html   div:nth-child(1){
+  animation: left  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(2){
+  animation: rotate  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(3){
+  animation: right  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(4){
+  animation: left  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(5){
+  animation: scal  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(6){
+  animation: right  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(7){
+  animation: left  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(8){
+  animation:  rotate 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(9){
+  animation: right  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
 }
 #iconcontainer{
   background-image: url("./home.pnj");
@@ -342,6 +423,7 @@ transform:translateY(-20px);
   flex-wrap: wrap;
   gap:30px;
 }
+
 #eachproject{
   border-radius:10px;
   border:none;
@@ -399,6 +481,36 @@ transform:translateY(-20px);
   align-items: center;
   gap: 0px;
   flex-wrap: wrap;
+}
+#projects div:nth-child(1){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(2){
+  animation: scal 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(3){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(4){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(5){
+  animation: rotate 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(6){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
 }
 #getintouchpage{
   margin:auto;
@@ -591,6 +703,81 @@ transform:translateY(-20px);
      align-items: flex-start;
      justify-content: center;
 }
+#services div:nth-child(1){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(2){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(3){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(4){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(5){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#services div:nth-child(6){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(1){
+  animation: left  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(2){
+  animation: rotate  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(3){
+  animation: right  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(4){
+  animation: left  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(5){
+  animation: scal  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(6){
+  animation: right  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(7){
+  animation: left  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(8){
+  animation:  rotate 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#html   div:nth-child(9){
+  animation: right  2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
 #eachproject{
   border-radius:10px;
   width:380px;
@@ -599,6 +786,39 @@ transform:translateY(-20px);
   display: flex;
   flex-direction: column;
   gap: 20px;
+   animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(1){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(2){
+  animation: scal 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(3){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(4){
+  animation: left 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(5){
+  animation: rotate 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
+}
+#projects div:nth-child(6){
+  animation: right 2s linear;
+  animation-timeline:view();
+  animation-range:entry 0%;
 }
 #getintouchpage{
   margin:auto;
@@ -655,6 +875,26 @@ transform:translateY(-20px);
   }
   to {
     transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes rotate{
+    from {
+    transform:rotate(90deg);
+    opacity:0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes pro{
+    from {
+    transform:rotate(90deg);
+    opacity:0;
+  }
+  to {
+    transform: rotate(0deg);
     opacity: 1;
   }
 }
