@@ -1442,9 +1442,7 @@ Real-time weather forecasting app with detailed climate information.            
            <a> <img src="git.png" id="eachsocial"></img></a>
            <a> <img src="telegram.png" id="eachsocial"></img></a>
            <a> <img src="hackerrank.png" id="eachsocial"></img></a>
-           <a> <img src="codeforces.png" id="eachsocial"></img></a>
-           <a> <img src="" id="eachsocial"></img></a>
-           
+           <a> <img src="codeforces.png" id="eachsocial"></img></a>           
            
            
           </div >
