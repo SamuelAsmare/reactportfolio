@@ -14,7 +14,7 @@ body{
  scroll-behavior: auto;
 
  
-}z
+}
 #app{
   width: 100%;
   display: flex;
@@ -312,7 +312,6 @@ body{
      height: 300px;
      border-radius:20px;
      box-sizing: border-box;
-     box-shadow: 1px 5px 10px -5px rgb(169, 166, 166);
      padding: 8px;
      margin-top: 80px;
      display: flex;
@@ -322,7 +321,7 @@ body{
      justify-content: center;
      transition: 0.1s ease-in-out;
      color:#555;
-      border:white solid 2px;
+      border:rgb(42, 217, 236) solid 2px;
      animation: left  2s linear;
   animation-timeline:view();
   animation-range:entry 0%;
@@ -330,7 +329,7 @@ body{
 #eachservice:hover {
      box-shadow: none;
      border:#02e7c1 solid 2px;
-     transform:translateY(-10px);
+     transform:translateY(-20px);
 }
 #skills{
   display: flex;
@@ -390,7 +389,7 @@ body{
 #html{
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 70px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -400,7 +399,7 @@ body{
      height: 300px;
      border-radius:20px;
      box-sizing: border-box;
-     border:rgb(255, 255, 255) solid 2px;
+     border:rgb(198, 72, 232) solid 2px;
      padding: 8px;
      margin-top: 80px;
      display: flex;
@@ -699,12 +698,26 @@ transform:translateY(-20px);
   animation-timeline:view();
   animation-range:entry 0%;
 }
+#services{
+  margin:auto;
+  width:90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap:30px;
+  flex-wrap:wrap;
+  
+  font-family: 'Lora',serif;
+  color:#0b204e;
+}
 #eachservice{
      width:400px;
      height: 350px;
      border-radius:20px;
      box-sizing: border-box;
-     box-shadow: 0px 0px 10px 2px rgb(231, 229, 229);
+    border:#24d3c7 solid 2px;
      padding: 8px;
      margin-top: 60px;
      display: flex;
@@ -742,6 +755,15 @@ transform:translateY(-20px);
   animation: right 2s linear;
   animation-timeline:view();
   animation-range:entry 0%;
+}
+
+#html{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 #html   div:nth-child(1){
   animation: left  2s linear;
