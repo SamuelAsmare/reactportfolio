@@ -1477,10 +1477,12 @@ Real-time weather forecasting app with detailed climate information.            
       }}>
         <h3  style={{textAlign:"center",fontWeight:"bold",
          fontFamily:"'Nunito', sans-serif"}}>
-         Logo
+         Contact Us
         </h3>
         <h6 style={{fontWeight:"bold",
-         fontFamily:"'Nunito', sans-serif"}}>
+         fontFamily:"'Nunito', sans-serif",
+         textAlign:"center",
+         }}>
          Creating innovative digital solutions with a focus on user experience and performance.
         </h6>
       </div>
@@ -1489,28 +1491,23 @@ Real-time weather forecasting app with detailed climate information.            
          fontWeight:"bold",
          fontFamily:"'Nunito', sans-serif"
       }}>Quick Links</h3>
+      
       <h6  style={{textAlign:"center",
          fontWeight:"bold",
          fontFamily:"'Nunito', sans-serif"
-      }}>
-         Services
-      </h6>
-      <h6  style={{textAlign:"center",
-         fontWeight:"bold",
-         fontFamily:"'Nunito', sans-serif"
-      }}>
+      }}  onClick={toviewaboutme}>
          About
       </h6>
       <h6  style={{textAlign:"center",fontWeight:"bold",
-         fontFamily:"'Nunito', sans-serif"}}>
+         fontFamily:"'Nunito', sans-serif"}} onClick={toviewservices}>
          Services
       </h6>
       <h6 style={{textAlign:"center",fontWeight:"bold",
-         fontFamily:"'Nunito', sans-serif"}}>
+         fontFamily:"'Nunito', sans-serif"}} onClick={toviewskills}>
          Skills
       </h6>
       <h6  style={{textAlign:"center",fontWeight:"bold",
-         fontFamily:"'Nunito', sans-serif"}}>
+         fontFamily:"'Nunito', sans-serif"}} onClick={toviewprojects}>
         Projects
       </h6>
       </div>
