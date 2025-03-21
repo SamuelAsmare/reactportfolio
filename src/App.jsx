@@ -496,6 +496,7 @@ Active participant in competitive programming platforms with expertise in data s
                   display:"flex",
                   justifyContent:"space-between",
                   alignItems:"center",
+                  gap:"170px",
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
