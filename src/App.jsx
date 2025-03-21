@@ -8,10 +8,10 @@ import {useState,useEffect} from 'react';
 function App() {
     const [loaded,setloaded] = useState(false);
   useEffect(() => {
-    document.getElementById('body').style.overflow =loaded? "auto" : "hidden";
+    document.getElementById('body').style.overflow =loaded? "" : "hidden";
    setTimeout(() =>{
       setloaded(true);
-       document.getElementById('body').style.overflow ='auto';
+       document.getElementById('body').style.overflowY='auto';
    },3000)
   }
   
@@ -1364,124 +1364,15 @@ Real-time weather forecasting app with detailed climate information.            
       </h1>
       <h4>Let's discuss your next project</h4>
       <div id="formandcontact">
-      <div style={{
-         width:"400px",
-         display:"flex",
-         justifyConyent:"end"
-      }}>
-         <form id="form" style={{
-            width:"380px",
-            margin:"auto",
-            padding:"20px",
-            gap:"20px",
-         
-         }}>
+    
+         <form id="form">
            <input type="text" placeholder="Name" id="name" required/>
             <input type="email" placeholder="Email" id="name" required/>
             <input type="text" placeholder="Subject" id="name" required/>
             <textarea placeholder="Message" id="name" required></textarea>
             <input type="submit" id="sendmessage" value="Send Message"/>
          </form>
-      </div>
-      <div id="contact" style={{
-            display: 'flex',
-            margin:"auto",
-            justifyContent:'center',
-            flexDirection:'column',
-            width:"600px",
-            gap:"20px",
-            fontFamily:"font-family: 'Nunito', sans-serif"
-      }}>
-        
-         <div style={{
-            display: 'flex',
-            justifyContent:'flex-end',
-            gap:"20px",
-            marginBottom: '20px',
-         }}>
-            
-         <h5 style={{
-            width: '30px',
-            height: '30px',
-            borderRadius: '50%',
-            backgroundColor: 'rgb(110, 192, 237)',
-            display: 'inline-block',
-            color:"black",
-            paddingTop: "5px",
-            textAlign:"center",
-            fontFamily:" 'Nunito', sans-serif",
-            fontWeight: 'bold',
-         }}>📱</h5>
-        
-         <h4 style={{
-            paddingTop: '8px',
-            marginLeft: '67x',
-             fontSize: '18px',
-             text:"center",
-            fontWeight: 'bold',
-            fontFamily:"'Nunito', sans-serif",
-         }}>phone: +(251) 928210736&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h4>
-         </div>
-         <div style={{
-            display: 'flex',
-           justifyContent:'flex-end',
-            gap:"20px",
-            marginBottom: '20px',
-         }}>
-         <h5 style={{
-            width: '30px',
-            height: '30px',
-            borderRadius: '50%',
-            backgroundColor: '#f0d2f6',
-             color:"rgb(110, 192, 237)",
-            paddingTop: "5px",
-           textAlign:"center",
-            fontFamily:" 'Nunito', sans-serif",
-            fontWeight: 'bold',
-         }}>✉</h5>
-        
-         <h4 style={{
-            paddingTop: '8px',
-            marginLeft: '10px',
-             fontSize: '18px',
-            fontWeight: 'bold',
-            fontFamily:"'Nunito', sans-serif",
-         }}>Email: samuelasmare19@gmail.com</h4>
-         </div>
-         <div style={{
-            display: 'flex',
-            justifyContent:'flex-end',
-            gap:"20px",
-            marginBottom: '20px',
-         }}>
-         <h6 style={{
-            width: '30px',
-            height: '30px',
-            borderRadius: '50%',
-            backgroundColor: 'rgb(110, 192, 237)',
-            paddingTop: "5px",
-             textAlign:"center",
-            fontFamily:" 'Nunito', sans-serif",
-            fontWeight: 'bold',
-         }}>🌍</h6>
-        
-         <h5 style={{
-            paddingTop: '8px',
-            marginLeft: '0px',
-            fontSize: '18px',
-            fontWeight: 'bold',
-            fontFamily:"'Nunito', sans-serif",
-         }}>Location: Addis Ababa, Ethiopia&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h5>
-         </div>
-         <div style={{
-            display: 'flex',
-            justifyContent:'center',
-            gap:"20px",
-            marginBottom: '20px',
-         }}>
-         
-         </div>
-      </div>
+      
       </div>
    </div> 
    {/*  Contact*/}
@@ -1499,6 +1390,27 @@ Real-time weather forecasting app with detailed climate information.            
          }}>
          Creating innovative digital solutions with a focus on user experience and performance.
         </h6>
+        <h4 style={{
+            paddingTop: '8px',
+            marginLeft: '67x',
+             fontSize: '18px',
+             text:"center",
+            fontWeight: 'bold',
+            fontFamily:"'Nunito', sans-serif",
+         }}>phone: +(251) 928210736</h4>
+          <h4 style={{
+            paddingTop: '8px',
+             fontSize: '18px',
+            fontWeight: 'bold',
+            fontFamily:"'Nunito', sans-serif",
+         }}>Email: samuelasmare19@gmail.com</h4>
+         <h5 style={{
+            paddingTop: '8px',
+            fontSize: '18px',
+            fontWeight: 'bold',
+            fontFamily:"'Nunito', sans-serif",
+         }}>Location: Addis Ababa, Ethiopia&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h5>
+
       </div>
       <div id="quicklinks">
       <h3  style={{textAlign:"center",
@@ -1524,6 +1436,18 @@ Real-time weather forecasting app with detailed climate information.            
          fontFamily:"'Nunito', sans-serif"}} onClick={toviewprojects}>
         Projects
       </h6>
+      <div id="social">
+           <a> <img src="leet.png" id="eachsocial"></img></a>
+           <a> <img src="lin.png" id="eachsocial"></img></a>
+           <a> <img src="git.png" id="eachsocial"></img></a>
+           <a> <img src="telegram.png" id="eachsocial"></img></a>
+           <a> <img src="hackerrank.png" id="eachsocial"></img></a>
+           <a> <img src="codeforces.png" id="eachsocial"></img></a>
+           <a> <img src="" id="eachsocial"></img></a>
+           
+           
+           
+          </div >
       </div>
       <div id="newsletter">
           <h3 style={{textAlign:"center",fontWeight:"bold",
@@ -1556,6 +1480,8 @@ Real-time weather forecasting app with detailed climate information.            
             fontSize:"16px",
  
           }}>Subscribe</button>
+
+          
       </div>
    </div>
    <div id="footer">

@@ -309,7 +309,7 @@ body{
   
 }
 #awards a:nth-child(1){
-  animation: scal 2s linear;
+  animation: scal 2s linear ;
        animation-timeline:view();
          animation-range:entry 10%;
   
@@ -654,7 +654,7 @@ transform:translateY(-20px);
 }
 #getintouchpage{
   margin:auto;
-  width:90%;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -667,29 +667,30 @@ transform:translateY(-20px);
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   flex-wrap: wrap;
-  margin-top: 10px;
 }
 #form{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 400px;
   margin:auto;
   padding: 20px;
 }
 #name{
   width:600px;
+  height:40px;
   border-radius:5px;
- border:rgb(80, 208, 234) solid 2px;
+ border:rgb(9, 116, 138) solid 2px;
 }
 #name:active{
   border-radius:5px;
   border:rgb(10, 189, 229) solid 2px;
 }
 #sendmessage{
-  background-color:rgb(125, 239, 125);
+  margin:auto;
+  background-color:rgb(9, 226, 230);
+  width:150px;
+  color:rgb(13, 38, 69);
   border-radius:5px;
   border:none;
 
@@ -701,17 +702,38 @@ transform:translateY(-20px);
   background-color:rgb(7, 33, 53);
   color:rgb(178, 175, 175);
   width:100%;
+  gap:50px;
   padding:20px;
    font-family:"'Nunito', sans-serif";
    font-weight:bold;
 }
 #footer{
-  margin-top:1px;
+  margin-top:0.5px;
   background-color:rgb(4, 41, 47);
   padding:20px;
-  color:rgb(237, 230, 230);
-  WIDTH: 100%;
+  color:rgb(99, 170, 187);
+  width: 100%;
   text-align:center;
+}
+#social{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 20px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+#eachsocial{
+  cursor:pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(10, 189, 229);
+  transition: 0.3s ease-in-out;
+}
+#eachsocial:hover{
+  background-color: rgb(10, 189, 229);
+  transform: scale(1.1);
 }
 
 @media (max-width: 600px){
