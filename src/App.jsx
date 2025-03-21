@@ -1,4 +1,3 @@
-import {useState ,useEffect}from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css'
@@ -8,32 +7,8 @@ import '@fontsource/roboto'; // Default weight is 400.
 
 
 function App() {
-
- const [showPage, setShowPage] = useState(false);
-
-  useEffect(() => {
-    // Show preloader for 3 seconds, then display the page
-    const timer = setTimeout(() => {
-      setShowPage(true);
-       document.getElementById("wholepage").style.height= "10vh";
-       document.getElementById("preloader").style.height= "10vh";
-    }, 3000);
-
-    return () => clearTimeout(timer); // Cleanup on unmount
-  }, []);
   return (
-   <div id="wholepage">
-       {!showPage? (
-           <div id="preloader">
-             <div id="spinner">
-               <div className="spinner-border text-primary" role="status">
-                 <span className="sr-only"></span>
-               </div>
-             </div>
-           </div>
-          
-       ):(
-           <div id="app">
+     <div id="app">
       <div id="hea">
         <div id="navs"  title="home">
         <a href="#" style={{textDecoration:"none"}} id="navs">Home</a>
@@ -240,12 +215,11 @@ function App() {
       <div id="aboutme">
        
         <div id="photo">
-           <img src="./NEWCOPY.JPG" alt="Sam"   style={{
+           <img src="./NEWCOPY.JPG" style={{
             width:"100%",
             height:"100%",
             borderRadius:"10px",
-            
-           }}      ></img>
+           }}></img>
         </div>
           <div id="phone"  style={{
                fontSize:"10px",
@@ -1582,9 +1556,7 @@ Real-time weather forecasting app with detailed climate information.            
       </h6>
    </div>
      </div>
-)}
-   </div>
-     
+    
   )
 } 
                   
