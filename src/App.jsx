@@ -1436,6 +1436,12 @@ Real-time weather forecasting app with detailed climate information.            
          fontFamily:"'Nunito', sans-serif"}} onClick={toviewprojects}>
         Projects
       </h6>
+      <h6 style={{
+         fontWeight:"bold",
+         fontFamily:"'Nunito', sans-serif",
+         marginTop:"40px",
+         textAlign:"center",
+      }}>Social Medias</h6>
       <div id="social">
            <a> <img src="leet.png" id="eachsocial"></img></a>
            <a> <img src="lin.png" id="eachsocial"></img></a>
