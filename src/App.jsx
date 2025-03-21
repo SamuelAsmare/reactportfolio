@@ -18,10 +18,7 @@ function App() {
   ,[]);
    return (
      !loaded?(
-     <div id="loadercontainer"><span id="loader"></span>
-     <h2 style={{
-      fontFamily: "'Nunito', sans-serif",
-     }}>i am comming</h2></div> 
+     <div id="loadercontainer"><div id="lds-ripple"><div></div><div></div></div></div>
    ): (
      <div id="app">
       <div id="hea">
