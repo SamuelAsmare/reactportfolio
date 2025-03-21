@@ -2,12 +2,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css'
 import {toviewaboutme, toviewcontact,toviewservices,toviewskills,toviewprojects} from './navigation.jsx';
-
 import '@fontsource/roboto'; // Default weight is 400.
-
+import {useState,useEffect} from 'react';
 
 function App() {
-  return (
+    const [loaded,setloaded] = useState(false);
+  useEffect(() => {
+    document.getElementById('body').style.overflow =loaded? "auto" : "hidden";
+   setTimeout(() =>{
+      setloaded(true);
+       document.getElementById('body').style.overflow ='auto';
+   },3000)
+  }
+  
+  ,[]);
+   return (
+     !loaded?(
+     <div id="loadercontainer"><span id="loader"></span>
+     <h2 style={{
+      fontFamily: "'Nunito', sans-serif",
+     }}>i am comming</h2></div> 
+   ): (
      <div id="app">
       <div id="hea">
         <div id="navs"  title="home">
@@ -229,7 +244,7 @@ function App() {
                <h3 style={{
                   fontSize:"20px",
                textAlign:"center",
-               marginTop:"40px",
+               marginTop:"70px",
                fontWeight:"bold",
             }}>Name: Samuel Asmare</h3>
                <h3 style={{
@@ -271,7 +286,9 @@ function App() {
                         paddingTop:"12px",
                         backgroundColor:"#AAA990",
                      }}>&#x2705;</h2>
-I am a second year Computer Science student at Addis Ababa University.  I am currently developing my skills on designing engaging and user-friendly websites and real life problem solving. As an aspiring frontend developer , I specialize in creating responsive and dynamic websites that focuses on not only aesthetics background but also on functionality.
+<h4 style={{
+   paddingTop:"20px",
+}}>I am a second year Computer Science student at Addis Ababa University.  I am currently developing my skills on designing engaging and user-friendly websites and real life problem solving. As an aspiring frontend developer , I specialize in creating responsive and dynamic websites that focuses on not only aesthetics background but also on functionality.</h4>
         </div>
       
       </div>
@@ -1553,7 +1570,7 @@ Real-time weather forecasting app with detailed climate information.            
       </h6>
    </div>
      </div>
-    
+      )
   )
 } 
                   
