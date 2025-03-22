@@ -579,14 +579,6 @@ transform:translateY(-20px);
 #eachproject:hover{
   border-radius:5px;
   scale:1.02;
-  border:none;
-  width:400px;
-  height: 400px;
- margin-top:40px;
-  display: flex;
-  box-shadow: 0px 4px 10px rgba(20, 20, 20, 0.3); /* Only bottom shadow */
-  flex-direction: column;
-  gap: 20px;
 }
 #viewtheproject{
   width:150px;
@@ -889,12 +881,12 @@ transform:translateY(-20px);
   color:#0b204e;
 }
 #eachservice{
-     width:400px;
-     height: 350px;
+     width:90%;
+     height: 370px;
      border-radius:20px;
      box-sizing: border-box;
     border:#24d3c7 solid 2px;
-     padding: 8px;
+    padding:-10px;
      margin-top: 60px;
      display: flex;
      flex-direction: column;
@@ -986,10 +978,26 @@ transform:translateY(-20px);
   animation-timeline:view();
   animation-range:entry 0%;
 }
+#eachskill{
+   width:95%;
+     height: 300px;
+     border-radius:20px;
+     box-sizing: border-box;
+     border:rgb(198, 72, 232) solid 2px;
+     padding: 8px;
+     margin-top: 80px;
+     display: flex;
+     flex-direction: column;
+     gap:20px;
+     align-items: flex-start;
+     justify-content: center;
+     transition: 0.1s ease-in-out;
+     color:#555;
+}
 #eachproject{
   border-radius:10px;
-  width:380px;
-  height: 380px;
+  width:90%;
+  height: 390px;
  margin-top:40px;
   display: flex;
   flex-direction: column;
@@ -1030,7 +1038,7 @@ transform:translateY(-20px);
 }
 #getintouchpage{
   margin:auto;
-  width:90%;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1038,8 +1046,17 @@ transform:translateY(-20px);
   gap: 40px;
   margin-top: 50px;
 }
+#form{
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin:auto;
+  padding: 10px;
+}
 #name{
-  width:340px;
+  margin:auto;
+  width:100%;
   border-radius:5px;
   border:rgb(108, 168, 242) solid 2px;
 }

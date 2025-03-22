@@ -22,7 +22,7 @@ document.getElementById('skillpage').scrollIntoView({
 const toviewprojects=()=>{
         
 document.getElementById('projectspage').scrollIntoView({
-                
+                // behaviour:"smooth"
             });
         
 }
