@@ -180,19 +180,20 @@ body{
 
 
 #navs{
-  font-size:16px;
+  font-size:20px;
   color:white;
+  margin:5px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
    font-family: 'Nunito', sans-serif;
   
 }
 #navs:hover{
-  color:rgb(68, 220, 240);
   cursor:pointer;
-  transform:scale(1.1);
+  transform:translateY(-1px);
   transition: 0.1s ease-in-out;
-  text-decoration:none;
+  text-decoration:underline;
+  
 }#homepage{
   display: flex;
   flex-direction: column;
@@ -413,7 +414,7 @@ body{
   margin-top: 20px;
   gap: 120px;
   flex-wrap:wrap;
-  
+  text-decoration: none;
   font-family: 'Lora',serif;
   color:#0b204e;
 }
@@ -743,7 +744,8 @@ transform:translateY(-20px);
 }
 
 #navs{
-  font-size: 14px;
+  font-size: 16px;
+  margin:10px;
   font-weight: bold;
    font-family: 'Nunito', sans-serif;
 }

@@ -4,7 +4,32 @@ import './App.css'
 import {toviewaboutme, toviewcontact,toviewservices,toviewskills,toviewprojects} from './navigation.jsx';
 import '@fontsource/roboto'; // Default weight is 400.
 import {useState,useEffect} from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReact,
+  faPython,
+  faJs,
+  faHtml5,
+  faCss3Alt,
+  faNode,
+  faGit,
+  faGithub,
+  faLinkedin,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons"; 
+import {
+  faHome,
+  faUser,
+  faLaptopCode,
+  faBriefcase,
+  faProjectDiagram,
 
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faLocationDot,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons"; // Import solid icons
 function App() {
     const [loaded,setloaded] = useState(false);
   useEffect(() => {
@@ -23,22 +48,22 @@ function App() {
      <div id="app">
       <div id="hea">
         <div id="navs"  title="home">
-        <a href="#" style={{textDecoration:"none"}} id="navs">Home</a>
+        <a href="#" style={{textDecoration:"none",}} id="navs"> <FontAwesomeIcon icon={faHome} /></a>
        </div>
        <div id="navs" title="aboutme" onClick={toviewaboutme}>
-       About
+       <FontAwesomeIcon icon={faUser} />
        </div>
       <div id="navs" onClick={toviewservices}>
-         Services
+       <FontAwesomeIcon icon={faBriefcase} />
        </div>
        <div id="navs" onClick={toviewskills} >
-        Skills
+        <FontAwesomeIcon icon={faLaptopCode} />
        </div>
        <div id="navs" onClick={toviewprojects}>
-       Portfolio
+      <FontAwesomeIcon icon={faProjectDiagram} />
        </div>
        <div id="navs" onClick={toviewcontact}>
-      Contact
+      <FontAwesomeIcon icon={faEnvelope} />
        </div>
       </div>
 
@@ -57,7 +82,7 @@ function App() {
          </div>
          
          <div style={{
-            paddingBottom:"20px",
+            paddingBottom:"10px",
             width:"90%",
             fontSize:"30px",
               fontFamily: "'Nunito', sans-serif"
@@ -86,10 +111,11 @@ function App() {
          </div>
          
          <div id="buttons">
-            <button id="portfolio">
+            <a href= "./CV.pdf"  download="Samuel Asmare CV.pdf" ><button id="portfolio">
               Download CV
-            </button>
-            <button id="connect">
+            </button></a>
+            
+            <button id="connect" onClick={toviewcontact}>
               Let's Connect
             </button>
             {/* <img id="github" src="./git.png">
@@ -100,7 +126,7 @@ function App() {
          </div>
           
           <div id="awards">
-                  <a href="#"style={{ textDecoration:"none",}}><div id= "experianceblocks" style={{
+                  <a href="https://github.com/SamuelAsmare/"style={{ textDecoration:"none",}}><div id= "experianceblocks" style={{
                         display:"flex",
                         flexDirection:"column",
                         justifyContent:"center",
@@ -131,7 +157,7 @@ function App() {
                          fontFamily:" 'Nunito', sans-serif",
                      }}>Hours of Coding</h7>
                   </div></a>
-                  <a href="#" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
+                  <a href="https://leetcode.com/u/Sami1_2_21/" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
                         display:"flex",
                         flexDirection:"column",
                         justifyContent:"center",
@@ -159,7 +185,7 @@ function App() {
                          fontFamily:" 'Nunito', sans-serif",
                      }}>Problems solved</h7>
                   </div></a>
-                   <a href="#" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
+                   <a href="https://github.com/SamuelAsmare/" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
                         display:"flex",
                         flexDirection:"column",
                         justifyContent:"center",
@@ -186,7 +212,7 @@ function App() {
                          fontFamily:" 'Nunito', sans-serif",
                      }}>Projects completed</h7>
                   </div></a>
-                  <a href="#" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
+                  <a href="https://github.com/SamuelAsmare/" style={{ textDecoration:"none",}}><div id= "experianceblocks"  style={{
                         display:"flex",
                         flexDirection:"column",
                         justifyContent:"center",
@@ -275,14 +301,6 @@ function App() {
           textAlign:"center",
           fontFamily: "'Nunito', sans-serif",
         }}>
-            <h2 id="icons"
-                     style={{
-                         margin:"auto",
-                        fontSize:"23px",
-                        fontWeight:"bold",
-                        paddingTop:"12px",
-                        backgroundColor:"#AAA990",
-                     }}>&#x2705;</h2>
 <h4 style={{
    paddingTop:"20px",
 }}>I am a second year Computer Science student at Addis Ababa University.  I am currently developing my skills on designing engaging and user-friendly websites and real life problem solving. As an aspiring frontend developer , I specialize in creating responsive and dynamic websites that focuses on not only aesthetics background but also on functionality.</h4>
@@ -514,16 +532,13 @@ Expertise in data structures and algorithms. Regular contributor to open-source 
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
-                     <h2 id="icons"
+                     <h2 
                      style={{
                         paddingTop:"15px",
                         marginLeft:"30px",
-                        fontSize:"18px",
-                        fontWeight:"bold",
-                         borderRadius:"10px",
-                         color:"white",
-                        backgroundColor:"#ec8210",
-                     }}>HTML</h2>
+                        fontSize:"50px",
+                        fontWeight:"bold",                      
+                     }}><FontAwesomeIcon icon={faHtml5} color="#E34F26" /></h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -556,16 +571,15 @@ Expertise in data structures and algorithms. Regular contributor to open-source 
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
-                     <h2 id="icons"
+                     <h2 
                      style={{
                         paddingTop:"10px",
                         marginLeft:"30px",
-                        fontSize:"22px",
+                        fontSize:"50px",
                         fontWeight:"bold",
                         color:"white",
-                         borderRadius:"10px",
-                        backgroundColor:"#106bec",
-                     }}>CSS</h2>
+                       
+                     }}><FontAwesomeIcon icon={faCss3Alt} color="#1572B6" /></h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -679,16 +693,16 @@ Expertise in data structures and algorithms. Regular contributor to open-source 
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
-                     <h2 id="icons"
+                     <h2 
                      style={{
-                        paddingTop:"5px",
+                       
                         marginLeft:"30px",
-                        fontSize:"35px",
+                        fontSize:"50px",
                         color:"white",
                         borderRadius:"10px",
                         fontWeight:"bold",
-                        backgroundColor:"#c88ef4",
-                     }}>⚛️</h2>
+                     }}>      <FontAwesomeIcon icon={faReact} color="#61DBFB" />
+</h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -720,17 +734,15 @@ Expertise in data structures and algorithms. Regular contributor to open-source 
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
-                     <h2 id="icons"
+                     <h2 
                      style={{
-                        paddingTop:"5px",
                         marginLeft:"30px",
-                        fontSize:"35px",
+                        fontSize:"40px",
                         color:"white",
                         fontFamily: "'Arial', sans-serif",
                         borderRadius:"10px",
                         fontWeight:"bold",
-                         backgroundColor:"  rgb(204, 255, 204)",
-                     }}>&#9889;</h2>
+                     }}> <FontAwesomeIcon icon={faGit} color="#F05032" /></h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -762,16 +774,15 @@ Expertise in data structures and algorithms. Regular contributor to open-source 
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
-                     <h2 id="icons"
+                     <h2 
                      style={{
                         paddingTop:"0px",
                         marginLeft:"30px",
-                        fontSize:"35px",
+                        fontSize:"45px",
                         borderRadius:"10px",
                         fontWeight:"bold",
-                         backgroundColor:"  rgb(204, 255, 204)",
-                         fontFamily:"'Lora',serif",
-                     }}>g</h2>
+                        
+                     }}>  <FontAwesomeIcon icon={faGithub} color="black" /></h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -803,16 +814,16 @@ Expertise in data structures and algorithms. Regular contributor to open-source 
                   marginTop:"10px",
                   marginBottom:"10px",
                }}>
-                     <h2 id="icons"
+                     <h2 
                      style={{
                         paddingTop:"10px",
                         marginLeft:"30px",
-                        fontSize:"22px",
+                        fontSize:"50px",
                         fontWeight:"bold",
                         color:"white",
                          borderRadius:"10px",
-                        backgroundColor:"#106bec",
-                     }}>🐍</h2>
+                       
+                     }}> <FontAwesomeIcon icon={faPython} color="#3776AB" /></h2>
                <h1 style={{color:"#009BFF",
                   fontWeight:"bold",
                }}>
@@ -972,7 +983,7 @@ style={{
                         Movie browsing application with detailed information and reviews.
                      </h5>
                      <button id="viewtheproject">
-                        View project
+                        <a href="https://everymoviesearch.netlify.app/" style={{textDecoration:"none"}}>View project</a>
                      </button>
        </div>
        {/* Qrcode scanner */}
@@ -1047,7 +1058,7 @@ style={{
                      Fast and efficient QR code scanner that accepts uploaded image and live scanning. 
                      </h5>
                      <button id="viewtheproject">
-                        View project
+                        <a href="https://qrcreader.netlify.app/" style={{textDecoration:"none"}}>View project</a>
                      </button>
        </div>
        {/* Quiz App */}
@@ -1121,7 +1132,7 @@ style={{
                      }}>
 Interactive quiz application with multiple categories and scoring system.                     </h5>
                      <button id="viewtheproject">
-                        View project
+                       <a href="https://marvelous-kangaroo-619086.netlify.app/" style={{textDecoration:"none"}}>View project</a>
                      </button>
        </div>
        {/* Password Generator */}
@@ -1196,7 +1207,7 @@ Interactive quiz application with multiple categories and scoring system.       
                      Password Generator application that prompts the user to enter type of characters.
                      </h5>
                      <button id="viewtheproject">
-                        View project
+                      <a href="https://samipga.netlify.app/" style={{textDecoration:"none"}}>View project</a>
                      </button>
        </div>
        {/* Weather App */}
@@ -1270,7 +1281,7 @@ Interactive quiz application with multiple categories and scoring system.       
                      }}>
 Real-time weather forecasting app with detailed climate information.                     </h5>
                      <button id="viewtheproject">
-                        View project
+                        <a href="https://joyful-crostata-55fbf3.netlify.app/" style={{textDecoration:"none"}}>View project</a>
                      </button>
        </div>
        {/* Calculator */}
@@ -1344,7 +1355,7 @@ Real-time weather forecasting app with detailed climate information.            
                      }}>
                     Modern calculator with advanced mathematical functions.                  </h5>
                      <button id="viewtheproject">
-                        View project
+                      <a href="https://bucolic-profiterole-71fd40.netlify.app/" style={{textDecoration:"none"}}>View project</a>
                      </button>
        </div>
    </div>
@@ -1397,19 +1408,19 @@ Real-time weather forecasting app with detailed climate information.            
              text:"center",
             fontWeight: 'bold',
             fontFamily:"'Nunito', sans-serif",
-         }}>phone: +(251) 928210736</h4>
+         }}> <FontAwesomeIcon icon={faPhone} />   phone: +(251) 928210736</h4>
           <h4 style={{
             paddingTop: '8px',
              fontSize: '18px',
             fontWeight: 'bold',
             fontFamily:"'Nunito', sans-serif",
-         }}>Email: samuelasmare19@gmail.com</h4>
+         }}><FontAwesomeIcon icon={faEnvelope} /> Email: samuelasmare19@gmail.com</h4>
          <h5 style={{
             paddingTop: '8px',
             fontSize: '18px',
             fontWeight: 'bold',
             fontFamily:"'Nunito', sans-serif",
-         }}>Location: Addis Ababa, Ethiopia&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h5>
+         }}> <FontAwesomeIcon icon={faLocationDot} /> Location: Addis Ababa, Ethiopia&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h5>
 
       </div>
       <div id="quicklinks">
@@ -1443,14 +1454,19 @@ Real-time weather forecasting app with detailed climate information.            
          textAlign:"center",
       }}>Social Medias</h6>
       <div id="social">
-           <a> <img src="leet.png" id="eachsocial"></img></a>
-           <a> <img src="lin.png" id="eachsocial"></img></a>
-           <a> <img src="git.png" id="eachsocial"></img></a>
-           <a> <img src="telegram.png" id="eachsocial"></img></a>
-           <a> <img src="hackerrank.png" id="eachsocial"></img></a>
-           <a> <img src="codeforces.png" id="eachsocial"></img></a>           
+           <a href="https://leetcode.com/u/Sami1_2_21/"> <img src="leet.png" id="eachsocial"></img></a>
+
+           <a href="https://www.linkedin.com/in/samuel-asmare-b56303330/"> <img src="lin.png" id="eachsocial"></img></a>
+
+           <a href="https://github.com/SamuelAsmare/"> <img src="git.png" id="eachsocial"></img></a>
+
+           <a href="https://t.me/Sani_j12" > <img src="telegram.png" id="eachsocial"></img></a>
+
+           <a  href=" https://www.hackerrank.com/profile/samuelasmare19"> <img src="hackerrank.png" id="eachsocial"></img></a>
+           <a href="https://codeforces.com/profile/Sami1219"> <img src="codeforces.png" id="eachsocial"></img></a>           
            
-           
+          
+
           </div >
       </div>
       <div id="newsletter">
@@ -1503,3 +1519,4 @@ Real-time weather forecasting app with detailed climate information.            
                   
 
 export default App
+
