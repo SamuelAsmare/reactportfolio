@@ -89,7 +89,7 @@ function App() {
 
          }}>
             <h3 className="text-center fs-3 p-0 ">
-          Frontend Developer | Tech Enthusiast | UI/UX Designer
+          Frontend Developer | Tech Enthusiast | UI/UX Designer,
          </h3>
          </div>
          <div style={{
