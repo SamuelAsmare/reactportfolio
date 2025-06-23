@@ -33,7 +33,7 @@
     opacity:1;
   }
 } */
-@keyframes scal{
+/* @keyframes scal{
   from {
     transform: scale(0.5);
     opacity:0;
@@ -42,7 +42,7 @@
     transform: scale(1);
     opacity: 1;
   }
-}
+} */
 /* @keyframes rotate{
     from {
     transform:rotate(90deg);
